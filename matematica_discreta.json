@@ -1,0 +1,1582 @@
+[
+  {
+    "topic": "Fundamentos da lógica matemática",
+    "stem": "Em uma plataforma de revisão de lotes de dados, x percorre o conjunto L de lotes submetidos e y percorre o conjunto R de revisores credenciados. A(x,y) vale quando o revisor y aprova o lote x, e C(x,y) vale quando y tem conflito de interesse em relação a x. A política da plataforma exige que, para cada lote, haja um revisor que o aprove sem conflito de interesse. Qual alternativa formaliza uma auditoria que evidencia a falha dessa política?",
+    "alternatives": {
+      "A": "(∃x∈L)(∃y∈R)(¬A(x,y)∨C(x,y))",
+      "B": "(∃x∈L)(∀y∈R)(¬A(x,y)∨C(x,y))",
+      "C": "(∀x∈L)(∃y∈R)(¬A(x,y)∨C(x,y))",
+      "D": "(∃x∈L)(∀y∈R)(¬A(x,y)∨¬C(x,y))",
+      "E": "(∃x∈L)(∀y∈R)(¬A(x,y)∧C(x,y))"
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Teoria dos conjuntos",
+    "stem": "Um laboratório cataloga configurações de um kit R com cinco componentes distintos: R = {alfa, beta, gama, delta, épsilon}. Uma configuração é formada pela escolha de quaisquer componentes do kit. Para cada configuração X, o protocolo monta um dossiê com X e com R\\X, porém registra esse dossiê apenas quando |X| < |R\\X|. Caso o mesmo dossiê surja novamente, ele é mantido como um único bloco. Qual alternativa apresenta a classificação adequada da coleção de dossiês e sua quantidade de blocos?",
+    "alternatives": {
+      "A": "A coleção forma uma partição de P(R) e possui 16 blocos, constituídos por pares de configurações complementares de mesma cardinalidade.",
+      "B": "A coleção forma uma partição de P(R) e possui 32 blocos, constituídos por pares de configurações complementares.",
+      "C": "A coleção forma uma partição de P(R) e possui 16 blocos, cada um reunindo duas configurações complementares.",
+      "D": "A coleção não forma uma partição de P(R) e possui 16 blocos, constituídos por pares de configurações complementares.",
+      "E": "A coleção forma uma partição de P(R) e possui 15 blocos, constituídos por pares de configurações complementares."
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Lógica proposicional",
+    "stem": "Em um serviço de autorização de manutenção, p: a janela técnica está bloqueada; q: a solicitação possui assinatura criptográfica válida; r: o equipamento está em operação crítica. A regra operacional é ¬p ∧ q → (r ↔ p). Qual cláusula disjuntiva produz os mesmos valores lógicos dessa regra para as condições p, q e r?",
+    "alternatives": {
+      "A": "p ∨ ¬q ∨ ¬(r ∨ q)",
+      "B": "p ∨ ¬q ∨ ¬r",
+      "C": "p ∨ ¬q ∨ r",
+      "D": "¬p ∨ ¬q ∨ ¬r",
+      "E": "p ∨ q ∨ ¬r"
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Equivalências e inferências lógicas",
+    "stem": "Em uma central de custódia digital, p significa que o arquivo possui classificação de sigilo conferida, q significa que a assinatura do responsável está válida, e r significa que o arquivo foi liberado ao destinatário. A política de liberação é (p ∧ q) → r. Em uma auditoria, foi proposta a regra ¬r → (¬p ∨ ¬q). Considerando as condições de falha de cada condicional e o papel da segunda regra em uma justificativa indireta da política, qual alternativa apresenta a conclusão adequada?",
+    "alternatives": {
+      "A": "A política implica a regra de auditoria, mas as duas regras não são logicamente equivalentes; por isso, a condicional da política para a regra de auditoria constitui uma tautologia. A regra de auditoria fundamenta uma prova indireta ao partir de ¬r e obter ¬(p ∧ q), expresso por ¬p ∨ ¬q.",
+      "B": "As duas regras são logicamente equivalentes, pois falham na configuração p verdadeira, q verdadeira e r falsa; por isso, a equivalência entre elas constitui uma tautologia. A regra de auditoria fundamenta uma prova indireta ao partir de ¬(p ∧ q) e obter ¬r, sendo ¬(p ∧ q) expresso por ¬p ∨ ¬q.",
+      "C": "As duas regras são logicamente equivalentes, pois falham na configuração p verdadeira, q verdadeira e r falsa; por isso, a equivalência entre elas constitui uma tautologia. A regra de auditoria fundamenta uma prova indireta ao partir de ¬r e obter ¬(p ∧ q), expresso por ¬p ∧ ¬q.",
+      "D": "As duas regras são logicamente equivalentes, pois falham na configuração p falsa, q falsa e r falsa; por isso, a equivalência entre elas constitui uma tautologia. A regra de auditoria fundamenta uma prova indireta ao partir de ¬r e obter ¬(p ∧ q), expresso por ¬p ∨ ¬q.",
+      "E": "As duas regras são logicamente equivalentes, pois falham na configuração p verdadeira, q verdadeira e r falsa; por isso, a equivalência entre elas constitui uma tautologia. A regra de auditoria fundamenta uma prova indireta ao partir de ¬r e obter ¬(p ∧ q), expresso por ¬p ∨ ¬q."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=1.70 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado fornece toda a construção pedida. O trecho c48 fornece a mudança de domínio, incluindo a forma existencial com conjunção, mas não explicita a negação de um quantificador universal; o c45 fornece essa negação, mas não a adequação do domínio de R para U. As equivalências de implicação em c36 também sustentam a caracterização V(x)∧¬D(x). Assim, a justificativa formal combina trechos não contíguos. | R: Embora seja possível formalizar a solução em várias conversões, a alternativa correta pode ser obtida diretamente da semântica da política: um arquivo em R que passou por V e não tem D é precisamente um contraexemplo a V→D. Como R⊆U, esse mesmo arquivo pode ser devolvido por uma consulta em U. Não é necessário percorrer obrigatoriamente, em ordem, a cadeia completa de mudança de domínio, negação do universal e expansão da implicação. | C: O racional necessário é curto e usa apenas os elementos já apresentados no enunciado: identificar as condições que tornam uma implicação falsa (antecedente verdadeiro e consequente falso) e manter a condição de pertinência a R na consulta sobre U. Não exige conceitos externos nem uma argumentação extensa. | G: A resposta não decorre de mera localização ou recordação literal, pois é preciso aplicar o significado de uma implicação e relacionar o domínio restrito R ao domínio consultável U. Contudo, trata-se de aplicação conceitual direta, sem exigir análise ou síntese mais elaborada. | P: Há pelo menos dois distratores elimináveis antes da resolução formal completa. R∧V∧D descreve um caso que satisfaz a política, não uma violação; R∧¬V∧¬D também não a viola, pois com V falso a implicação V→D é verdadeira. Além disso, os distratores com implicação podem ser suspeitados por permitirem casos vacuamente verdadeiros. Portanto, dois ou mais distratores são descartáveis antecipadamente."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Lógica de predicados e quantificadores",
+    "stem": "Em um programa de monitoramento ambiental, E é o conjunto de equipamentos instalados, S⊆E é o conjunto de sensores regulamentados, T é o conjunto de inspetores habilitados, e V(x,y) significa que o inspetor y validou o equipamento x. A política exige, para cada sensor regulamentado, validação por pelo menos um inspetor habilitado. Entre as formulações candidatas, assinale aquela que expressa uma evidência conclusiva de falha da política, quantificando os equipamentos em E e preservando o sentido mesmo quando T for vazio.",
+    "alternatives": {
+      "A": "(∃x∈E)(∀y∈T)((x∈S) ∧ ¬V(x,y))",
+      "B": "(∃x∈E)((x∈S) → (∀y∈T) ¬V(x,y))",
+      "C": "(∃x∈E)((x∈S) ∧ (∀y∈T) ¬V(x,y))",
+      "D": "(∃x∈E)((x∈S) ∧ (∃y∈T) ¬V(x,y))",
+      "E": "(∀x∈E)((x∈S) ∧ (∀y∈T) ¬V(x,y))"
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 2,
+      "P": 1
+    },
+    "composite_score": 2.35,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Relações binárias",
+    "stem": "Uma rede fictícia de encaminhamento entre os pontos K, L, M, N e O usa conexões dirigidas de etapa única. Na ordem K, L, M, N, O, tanto para as linhas quanto para as colunas, a matriz booleana registrada é:\n\n[0 1 0 0 0]\n[0 0 1 0 0]\n[0 0 0 1 0]\n[0 0 0 0 0]\n[0 0 1 0 0]\n\nUma equipe pretende publicar um relatório que inclua as conexões obtidas por encaminhamentos com uma ou mais etapas, sem inserir conexões não exigidas por essa propagação. Qual alternativa apresenta o relatório compatível com a matriz, incluindo os pares acrescentados, a condição de transitividade e de ausência de pares excedentes, além do domínio e da imagem resultantes?",
+    "alternatives": {
+      "A": "O relatório acrescenta (K,M), (L,N) e (O,N). Assim, a relação final é {(K,L), (L,M), (M,N), (O,M), (K,M), (L,N), (O,N)}; ela é transitiva e não contém pares excedentes entre as relações transitivas que preservam as conexões diretas. Seu domínio é {K,L,M,O} e sua imagem é {L,M,N}.",
+      "B": "O relatório acrescenta (K,M), (L,N), (O,N), (K,N), (K,K), (L,L), (M,M), (N,N) e (O,O). Assim, a relação final é {(K,L), (L,M), (M,N), (O,M), (K,M), (L,N), (O,N), (K,N), (K,K), (L,L), (M,M), (N,N), (O,O)}; ela é transitiva e não contém pares excedentes entre as relações transitivas que preservam as conexões diretas. Seu domínio é {K,L,M,N,O} e sua imagem é {K,L,M,N,O}.",
+      "C": "O relatório acrescenta (K,M), (L,N), (O,N) e (K,N). Assim, a relação final é {(K,L), (L,M), (M,N), (O,M), (K,M), (L,N), (O,N), (K,N)}; ela é transitiva e não contém pares excedentes entre as relações transitivas que preservam as conexões diretas. Seu domínio é {K,L,M,O} e sua imagem é {L,M,N}.",
+      "D": "O relatório acrescenta (K,M), (L,N), (O,N), (K,N) e (K,O). Assim, a relação final é {(K,L), (L,M), (M,N), (O,M), (K,M), (L,N), (O,N), (K,N), (K,O)}; ela é transitiva e não contém pares excedentes entre as relações transitivas que preservam as conexões diretas. Seu domínio é {K,L,M,O} e sua imagem é {L,M,N,O}.",
+      "E": "O relatório acrescenta (M,K), (N,L), (N,O) e (N,K). Assim, a relação final é {(L,K), (M,L), (N,M), (M,O), (M,K), (N,L), (N,O), (N,K)}; ela é transitiva e não contém pares excedentes entre as relações transitivas que preservam as conexões diretas. Seu domínio é {L,M,N} e sua imagem é {K,L,M,O}."
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 2,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=1.95 não ultrapassou o limiar τ=2.33. L: Nenhum trecho individual declara a partição. O trecho c83 permite apenas reconhecer R como relação entre participantes e recursos; c87 apoia a composição com a inversa, que formaliza o compartilhamento de recurso; c92/c95 apoiam a propagação transitiva; e c107 trata das classes/partição de uma equivalência. Alternativamente, o próprio enunciado permite construir os grupos, mas a fundamentação no material exige combinar ideias de trechos distintos. | R: É necessário identificar os elos imediatos por recurso (Ari–Bia e Bia–Caio), propagar a associação pela cadeia para obter Ari–Caio indiretamente e preservar os participantes isolados, incluindo Eva pela autoassociação. Contudo, a etapa formal de escrever a composição R⁻¹∘R pode ser pulada: uma leitura direta dos registros como um grafo de compartilhamento chega ao mesmo resultado. Portanto, há etapas encadeadas, mas alguma formalização é dispensável. | C: O racional é curto e praticamente acompanha as regras fornecidas no enunciado: Ari e Bia compartilham o crachá, Bia e Caio compartilham a chave, logo os três formam um grupo; Davi e Eva permanecem sozinhos. Não é preciso introduzir nem desenvolver formalmente conceitos externos como composição de relações, fecho transitivo ou classes de equivalência. | G: A resposta não pode ser recuperada por simples recordação ou localização literal, pois a partição não está escrita nos dados. Exige compreender e aplicar a regra de associação por recurso e por cadeia, distinguindo conexão direta de indireta. Ainda assim, não demanda análise formal aprofundada, avaliação ou síntese de múltiplas soluções. | P: Dois ou mais distratores podem ser eliminados sem a resolução completa. O primeiro ignora a associação direta Bia–Caio pela chave-verde; o segundo agrupa Davi e Eva, embora Eva não tenha registro e Davi use um recurso exclusivo; o terceiro liga Davi ao grupo sem elo por recurso; e o quarto ignora ao menos a associação direta Ari–Bia pelo crachá-azul. Assim, todos os distratores têm uma contradição local prontamente verificável."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Funções",
+    "stem": "Um arquivo de catalogação trabalha com cinco selos distintos, C = {âmbar, coral, jade, ônix, prata}. Os selos regulamentados formam S = {âmbar, jade, prata}. Cada configuração arquivada é um subconjunto X de C. O procedimento q recebe X e devolve apenas os selos de X que pertencem a S; portanto, q: P(C) → P(S).\n\nUm relatório deve avaliar simultaneamente o alcance de q, a organização das configurações que produzem uma mesma saída Y e o que ocorre ao trocar, em cada registro de q, a posição da configuração e da saída. Qual relatório deve ser aprovado?",
+    "alternatives": {
+      "A": "q(P(C)) = P(S), de modo que há 4 saídas possíveis. Para Y ∈ P(S), o conjunto {X ∈ P(C) : q(X)=Y} tem 4 configurações, correspondentes às escolhas independentes de subconjuntos de {coral, ônix}. Os 8 conjuntos assim obtidos são disjuntos dois a dois e sua união é P(C). A relação formada pela troca das posições nos pares de q não é função de P(S) para P(C), pois cada Y fica associada a 4 configurações. Logo, q é sobrejetora, mas não é injetora nem bijetora.",
+      "B": "q(P(C)) = P(S), de modo que há 8 saídas possíveis. Para Y ∈ P(S), o conjunto {X ∈ P(C) : q(X)=Y} tem 4 configurações, correspondentes às escolhas independentes de subconjuntos de {coral, ônix}. Os 8 conjuntos assim obtidos são disjuntos dois a dois e sua união é P(C). A relação formada pela troca das posições nos pares de q não é função de P(S) para P(C), pois cada Y fica associada a 4 configurações. Logo, q é sobrejetora, mas não é injetora nem bijetora.",
+      "C": "q(P(C)) = P(S), de modo que há 8 saídas possíveis. Para Y ∈ P(S), o conjunto {X ∈ P(C) : q(X)=Y} tem 4 configurações, correspondentes às escolhas independentes de subconjuntos de S. Os 8 conjuntos assim obtidos são disjuntos dois a dois e sua união é P(C). A relação formada pela troca das posições nos pares de q não é função de P(S) para P(C), pois cada Y fica associada a 4 configurações. Logo, q é sobrejetora, mas não é injetora nem bijetora.",
+      "D": "q(P(C)) = P(S), de modo que há 8 saídas possíveis. Para Y ∈ P(S), o conjunto {X ∈ P(C) : q(X)=Y} tem 4 configurações, correspondentes às escolhas independentes de subconjuntos de {coral, ônix}. Os conjuntos assim obtidos são disjuntos dois a dois e sua união é P(C), formando 4 blocos. A relação formada pela troca das posições nos pares de q não é função de P(S) para P(C), pois cada Y fica associada a 4 configurações. Logo, q é sobrejetora, mas não é injetora nem bijetora.",
+      "E": "q(P(C)) = P(S), de modo que há 8 saídas possíveis. Para Y ∈ P(S), o conjunto {X ∈ P(C) : q(X)=Y} tem 4 configurações, correspondentes às escolhas independentes de subconjuntos de {coral, ônix}. Os 8 conjuntos assim obtidos são disjuntos dois a dois e sua união é P(C). A relação formada pela troca das posições nos pares de q é função de P(S) para P(C), pois cada Y fica associada a 4 configurações. Logo, q é sobrejetora, mas não é injetora nem bijetora."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Somatórias, produtórias e séries",
+    "stem": "Em uma rede experimental de calibração por camadas, o indicador acumulado após n estágios, com n inteiro positivo, é\n\nIₙ = ∏₍₀≤j≤k≤n−1₎ exp(2^(−j−k−2)).\n\nA equipe pretende aprovar um parecer que trate adequadamente a região de pares de índices, a contribuição dos pares com j=k e o comportamento do indicador quando o número de estágios cresce sem limite. Qual parecer deve ser aprovado?",
+    "alternatives": {
+      "A": "O parecer correto afirma que a região 0≤j≤k≤n−1 pode ser organizada pela diagonal j=k e pelos pares fora dela, associados aos pares simétricos do retângulo 0≤j,k≤n−1. Assim, a diagonal entra com contagem única e\n\nln(Iₙ) = 1/8[(∑₍j=0₎ⁿ⁻¹ 2^(−j))² + ∑₍j=0₎ⁿ⁻¹ 4^(−j)]\n= 1/2(1−2^(−n))² + 1/6(1−4^(−n)).\n\nLogo, ln(Iₙ) tende a 2/3 e Iₙ tende a exp(2/3).",
+      "B": "O parecer afirma que a região 0≤j≤k≤n−1 corresponde à metade do retângulo 0≤j,k≤n−1, atribuindo metade da contribuição dos pares da diagonal a cada lado da simetria. Assim,\n\nln(Iₙ) = 1/8(∑₍j=0₎ⁿ⁻¹ 2^(−j))²\n= 1/2(1−2^(−n))².\n\nLogo, ln(Iₙ) tende a 1/2 e Iₙ tende a exp(1/2).",
+      "C": "O parecer afirma que a região 0≤j≤k≤n−1 pode ser organizada pela diagonal j=k e pelos pares fora dela, associados aos pares simétricos do retângulo 0≤j,k≤n−1. Assim, a diagonal entra com contagem única e\n\nln(Iₙ) = 1/8[(∑₍j=0₎ⁿ⁻¹ 2^(−j))² + ∑₍j=0₎ⁿ⁻¹ 4^(−j)]\n= 1/2(1−2^(−n))² + 1/6(1−4^(−n)).\n\nLogo, ln(Iₙ) tende a 2/3 e Iₙ tende a 2/3.",
+      "D": "O parecer afirma que a região 0≤j≤k≤n−1 pode ser relacionada ao retângulo 0≤j,k≤n−1 por simetria, mas considera que os pares com j=k participam nos dois lados dessa relação. Assim,\n\nln(Iₙ) = 1/8[(∑₍j=0₎ⁿ⁻¹ 2^(−j))² + 2∑₍j=0₎ⁿ⁻¹ 4^(−j)]\n= 1/2(1−2^(−n))² + 1/3(1−4^(−n)).\n\nLogo, ln(Iₙ) tende a 5/6 e Iₙ tende a exp(5/6).",
+      "E": "O parecer afirma que, ao reorganizar os índices, pode-se tomar j e k variando de 0 até n−1 de modo independente, mantendo a diagonal j=k com uma contagem no retângulo obtido. Assim,\n\nln(Iₙ) = 1/4(∑₍j=0₎ⁿ⁻¹ 2^(−j))²\n= (1−2^(−n))².\n\nLogo, ln(Iₙ) tende a 1 e Iₙ tende a exp(1)."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=2.10 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado fornece o relatório completo. O trecho c138 sustenta P_0=1 pela convenção de produtório vazio e sugere a soma envolvendo k/3^k, mas não declara sua fórmula finita; c133 fornece separadamente a majoração da soma geométrica que implica M_n≤3/2; e c129 oferece uma técnica análoga de deslocamento de índices para somas ponderadas. Assim, a alternativa correta precisa ser construída combinando trechos não contíguos e fazendo inferências algébricas. | R: A derivação geral pretendida tem várias etapas, mas a seleção da alternativa não exige percorrê-las integralmente. Pode-se calcular diretamente S_2=1/3+2/9=5/9, eliminando os três distratores com fórmula distinta para S_n, e calcular M_2=(1+3+9)/9=13/9>4/3, eliminando o último. Há aplicações encadeadas das definições, porém a dedução completa da fórmula fechada e da majoração por indução pode ser pulada. | C: É necessário efetuar substituições e cálculos finitos com produtório e somatórias, além de confrontar os valores com as fórmulas candidatas. O procedimento permanece curto e usa apenas álgebra elementar e as definições apresentadas; não requer uma demonstração longa nem conceitos avançados externos. | G: A resposta não decorre de mera recordação ou localização literal: é preciso compreender P_k, S_n e M_n, aplicá-los para índices pequenos e comparar os resultados com os relatórios. Contudo, não é indispensável realizar análise ou síntese de ordem superior, pois verificações diretas em n=2 resolvem a escolha. | P: Todos os quatro distratores podem ser descartados sem resolver completamente a questão. Para n=2, o valor real é S_2=5/9, incompatível com os três primeiros distratores; para o quarto, embora S_n esteja correto, M_2=13/9, que é maior que 4/3. Portanto, dois ou mais — na verdade, todos — são elimináveis por testes pontuais."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Cardinalidade de conjuntos infinitos",
+    "stem": "Um arquivo registra configurações de interruptores cujos rótulos são números naturais iniciados em 0. Uma configuração válida ativa apenas uma quantidade finita de interruptores; o arquivo também aceita a configuração sem interruptores ativos. Seja F a coleção dessas configurações. Para X∈F, o sistema grava o código κ(X)=Σ(i∈X)2ⁱ, sendo a soma associada à configuração vazia igual a 0. A equipe recebeu pareceres divergentes sobre o alcance da codificação, a possibilidade de dois registros receberem o mesmo código e o tamanho de F em comparação com N e com P(N). Qual parecer deve ser aprovado?",
+    "alternatives": {
+      "A": "Deve ser aprovado o parecer segundo o qual κ é uma bijeção entre F e N: escritas binárias finitas distintas produzem códigos distintos, e a escrita binária de n fornece uma configuração em F, com ∅ associado a 0. Assim, F é infinita e tem a mesma cardinalidade de N; como F⊂P(N), essa inclusão demonstra que F tem cardinalidade estritamente menor que P(N).",
+      "B": "Deve ser aprovado o parecer segundo o qual κ é uma bijeção entre F e N: escritas binárias finitas distintas produzem códigos distintos, e a escrita binária de n fornece uma configuração em F, com ∅ associado a 0. Assim, F é infinita e tem a mesma cardinalidade de N. Embora F⊂P(N), essa inclusão não permite concluir que F tenha cardinalidade menor.",
+      "C": "Deve ser aprovado o parecer segundo o qual κ é injetora, pois configurações distintas geram escritas binárias distintas; porém, a exigência de que X seja finito impede assegurar que a escrita binária de um natural determine uma configuração admitida. Assim, não se pode classificá-la como bijeção nem concluir que F tenha a cardinalidade de N.",
+      "D": "Deve ser aprovado o parecer segundo o qual κ alcança N, pois a escrita binária de n fornece uma configuração finita, com ∅ associado a 0; contudo, κ não é injetora, já que zeros à esquerda em uma escrita binária representam configurações diferentes com o mesmo código. Assim, F é infinita, mas κ não estabelece que tenha a mesma cardinalidade de N.",
+      "E": "Deve ser aprovado o parecer segundo o qual κ não produz colisões, pois somas de potências distintas de 2 correspondem a escritas binárias distintas; entretanto, como cada configuração ativa apenas uma quantidade finita de interruptores, F é finita e não pode ter a mesma cardinalidade de N."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=1.00 não ultrapassou o limiar τ=2.33. L: O trecho [c163], isoladamente, declara exatamente o Teorema de Cantor, apresenta a construção X={a∈A:a∉f(a)}, prova que X não pertence à imagem de qualquer f:A→P(A), exibe a injeção a↦{a} e conclui |A|<|P(A)|. Portanto, não é necessário combinar trechos distintos. | R: Há uma demonstração em etapas, mas a questão pode ser respondida pelo atalho válido de reconhecer e aplicar diretamente o resultado explicitamente enunciado em [c163]: para todo A, |A|<|P(A)| e nenhuma função A→P(A) é bijetora. Assim, não é indispensável reconstruir toda a cadeia diagonal para alcançar a alternativa correta. | C: O racional necessário é uma paráfrase quase direta da prova e da conclusão de [c163]. Embora use noções de injeção, sobrejeção e bijeção, elas já estão operacionalizadas no próprio enunciado e no material; não é preciso introduzir conceitos adicionais nem desenvolver uma argumentação extensa. | G: A alternativa correta pode ser obtida por localização/recordação direta do Teorema de Cantor e de sua prova no trecho [c163]. Não é necessária análise nova além de identificar que o cenário é uma formulação de f:A→P(A). | P: Pelo menos dois distratores são descartáveis sem resolver integralmente o problema. O primeiro troca o conjunto diagonal complementar pelo conjunto {a:a∈f(a)}, para o qual a alegada diferença de todo f(a) não decorre; o segundo comete erro de quantificador ao passar de “para algum a” para “fora da imagem”; e o terceiro infere igualdade de cardinalidades de uma injeção. O quarto também ignora que, dadas ≤ e a ausência de bijeção, a conclusão é estrita. Logo, há dois ou mais eliminações locais."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Probabilidade e estatística descritiva",
+    "stem": "Uma empresa de rastreamento recebe remessas oriundas de apenas dois centros, Norte e Sul, que cobrem as possibilidades de origem. Antes de qualquer sinal operacional, Z assume Norte com probabilidade 80% e Sul com probabilidade 20%. Durante o percurso, dois mecanismos podem emitir alertas, U e V. Mantida a origem fixa, a emissão de um alerta não altera a chance de emissão do outro. Para remessas do Norte, Pr(U|Z=Norte)=20% e Pr(V|Z=Norte)=10%; para remessas do Sul, Pr(U|Z=Sul)=70% e Pr(V|Z=Sul)=60%.\n\nO sistema registra S como a quantidade de alertas emitidos entre U e V. Em uma remessa auditada, observou-se S=1, isto é, houve exatamente um alerta. Qual parecer de auditoria deve ser aprovado?",
+    "alternatives": {
+      "A": "Parecer: a origem Norte permanece mais provável após a observação, pois, usando as taxas globais Pr(U)=30% e Pr(V)=20%, a chance de exatamente um alerta é 30%×80%+70%×20%=38%. As massas são 80%×38%=30,4% para Norte e 20%×38%=7,6% para Sul; após a normalização, Pr(Z=Norte|S=1)=80,0%.",
+      "B": "Parecer: a origem Norte permanece mais provável após a observação, pois a chance de S=1 é calculada como 20%+10%−20%×10%=28% para Norte e 70%+60%−70%×60%=88% para Sul. As massas são 80%×28%=22,4% e 20%×88%=17,6%; após a normalização, Pr(Z=Norte|S=1)=22,4%/(22,4%+17,6%)=56,0%.",
+      "C": "Parecer: embora uma remessa do Sul tenha maior chance de produzir exatamente um alerta, com 46%, contra 26% para uma remessa do Norte, a origem Norte permanece mais provável após a observação. As massas associadas à evidência são 80%×26%=20,8% para Norte e 20%×46%=9,2% para Sul; após a normalização, Pr(Z=Norte|S=1)=20,8%/(20,8%+9,2%)=69,3%.",
+      "D": "Parecer: a origem Norte deve permanecer como a mais provável, com 80%, pois as probabilidades iniciais são 80% para Norte e 20% para Sul; assim, o registro de S=1 não altera a conclusão de auditoria.",
+      "E": "Parecer: como uma remessa do Sul tem maior chance de produzir exatamente um alerta, 46%, contra 26% para uma remessa do Norte, a origem Sul passa a ser mais provável. Normalizando apenas essas chances, obtém-se Pr(Z=Sul|S=1)=46%/(26%+46%)=63,9%."
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'single_correct_answer' não atendido; clareza pontuou 1, abaixo do mínimo exigido (2); diversidade semântica pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: O primeiro distrator está textualmente idêntico à resposta indicada como correta. Embora sua explicação descreva um erro bayesiano, os valores apresentados (posterior 0,407 e escolha de Ômega) são os corretos; portanto, ele também constitui uma resposta correta."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Probabilidade condicional e inferência bayesiana",
+    "stem": "Em um sistema de refrigeração industrial, uma anomalia em um módulo pode decorrer de exatamente um entre três modos de falha mutuamente exclusivos e exaustivos: I, II ou III. Antes da coleta de registros, não há histórico nem informação operacional que diferencie as frequências desses modos.\n\nDurante a inspeção, ocorreram os registros H (oscilação harmônica fora da faixa) e T (elevação térmica persistente). As taxas estimadas para esses registros são:\n\n• Modo I: Pr(H|I)=3/4 e Pr(T|I)=4/15.\n• Modo II: Pr(H|II)=7/12 e Pr(T|II)=3/5.\n• Modo III: Pr(H|III)=2/9 e Pr(T|III)=18/25.\n\nMantido fixo o modo de falha, a ocorrência de H não altera a probabilidade de T. Após a observação conjunta de H e T, qual parecer técnico deve ser selecionado?",
+    "alternatives": {
+      "A": "O modo II é o mais plausível após os registros, com probabilidade a posteriori de 1065/2828, aproximadamente 37,7%. Os escores combinados dos registros sob os modos I, II e III são, respectivamente, 61/60, 71/60 e 212/225; como os modos partem de probabilidades iniciais iguais, a normalização desses escores favorece o modo II.",
+      "B": "O modo II é o mais plausível após os registros, com probabilidade a posteriori de 7/20, ou 35%. As probabilidades conjuntas dos registros sob os modos I, II e III são, respectivamente, 1/5, 7/20 e 4/25; como o peso de 7/20 é o maior, a avaliação favorece o modo II.",
+      "C": "O modo I é o mais plausível após os registros, com probabilidade a posteriori de 27/56, aproximadamente 48,2%. Considerando a evidência H, os pesos dos modos I, II e III são, respectivamente, 3/4, 7/12 e 2/9; com probabilidades iniciais iguais, a normalização desses pesos atualiza a avaliação em favor do modo I.",
+      "D": "Os modos I, II e III permanecem igualmente plausíveis após os registros, cada um com probabilidade a posteriori de 1/3. As probabilidades conjuntas dos registros sob os modos I, II e III são, respectivamente, 1/5, 7/20 e 4/25; como os três modos tinham probabilidades iniciais iguais, a avaliação mantém essa distribuição entre eles.",
+      "E": "O modo II é o mais plausível após os registros, com probabilidade a posteriori de 35/71, aproximadamente 49,3%. As probabilidades conjuntas dos registros sob os modos I, II e III são, respectivamente, 1/5, 7/20 e 4/25; como os três modos partem de probabilidades iniciais iguais, a normalização desses pesos atualiza a avaliação em favor do modo II."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'no_implausible_distractor' não atendido; qualidade dos distratores pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: A alternativa correta está numericamente correta: as verossimilhanças de E são 0,4014 (Arco), 0,7024 (Brava) e 0,7564 (Cobalto), produzindo posteriores aproximadamente 0,3204, 0,3778 e 0,3018. Contudo, dois distratores são estruturalmente frágeis: o terceiro e o quarto apresentam supostas probabilidades posteriores que não somam 1, o que permite eliminá-los sem aplicar Bayes nem avaliar as taxas dos indicadores."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Teoria da informação",
+    "stem": "Em um veículo autônomo em operação normal, dois indicadores binários são gravados conjuntamente ao fim de um ciclo de telemetria: A, para correção automática de trajetória, e B, para recalibração preventiva de distância. A probabilidade de A estar ativo é 3/4, e a de B estar ativo é 2/3. Condicionada ao funcionamento normal, a ativação de um indicador não altera a probabilidade de ativação do outro. O registro eletrônico distingue as combinações dos dois indicadores. Considerando como informação de uma ocorrência de probabilidade p o valor −log₂(p), qual parecer técnico deve ser selecionado?",
+    "alternatives": {
+      "A": "O parecer afirma que as probabilidades das combinações (A ativo, B ativo), (A ativo, B inativo), (A inativo, B ativo) e (A inativo, B inativo) são, respectivamente, 1/2, 1/4, 1/6 e 1/12, cuja soma é 1. A combinação com ambos inativos fornece log₂(12) ≈ 3,585 bits quando ocorre; o registro comporta log₂(4) = 2 bits por distinguir as combinações possíveis; e a informação média é log₂(12) ≈ 3,585 bits, por corresponder à informação da combinação menos provável.",
+      "B": "O parecer afirma que as probabilidades das combinações (A ativo, B ativo), (A ativo, B inativo), (A inativo, B ativo) e (A inativo, B inativo) são, respectivamente, 1/2, 1/4, 1/6 e 1/12, cuja soma é 1. A combinação com ambos inativos fornece log₂(12) ≈ 3,585 bits quando ocorre; o registro comporta log₂(4) = 2 bits por distinguir as combinações possíveis; e a informação média é cerca de 0,865 bits, obtida pela média das informações médias marginais de A e de B.",
+      "C": "O parecer correto afirma que as probabilidades das combinações (A ativo, B ativo), (A ativo, B inativo), (A inativo, B ativo) e (A inativo, B inativo) são, respectivamente, 1/2, 1/4, 1/6 e 1/12, cuja soma é 1. A combinação com ambos inativos fornece log₂(12) ≈ 3,585 bits quando ocorre; o registro comporta log₂(4) = 2 bits por distinguir as combinações possíveis; e a informação média é cerca de 1,730 bits, abaixo de 2 bits devido às probabilidades desiguais.",
+      "D": "O parecer afirma que as probabilidades das combinações (A ativo, B ativo), (A ativo, B inativo), (A inativo, B ativo) e (A inativo, B inativo) são, respectivamente, 1/2, 1/4, 1/6 e 1/12, cuja soma é 1. A combinação com ambos inativos fornece 2 bits quando ocorre, pois o registro não comporta mais que log₂(4) = 2 bits por distinguir as combinações possíveis; e a informação média é cerca de 1,730 bits, abaixo de 2 bits devido às probabilidades desiguais.",
+      "E": "O parecer afirma que as probabilidades das combinações (A ativo, B ativo), (A ativo, B inativo), (A inativo, B ativo) e (A inativo, B inativo) são, respectivamente, 1/2, 1/6, 1/4 e 1/12, cuja soma é 1. A combinação com ambos inativos fornece log₂(12) ≈ 3,585 bits quando ocorre; o registro comporta log₂(4) = 2 bits por distinguir as combinações possíveis; e a informação média é cerca de 1,730 bits, abaixo de 2 bits devido às probabilidades desiguais."
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Teoria dos conjuntos",
+    "stem": "Em um painel de restauração, as peças disponíveis formam A = {brasa, cobre, névoa, prisma, turmalina}, e as peças sujeitas a um selo especial formam S = {cobre, prisma}. Cada configuração é um subconjunto X de A, mas o registro de selo associado a X é X∩S. Para Y⊆S, considere o agrupamento B_Y = {X⊆A : X∩S = Y}. Quando duas configurações X e W são processadas em conjunto, o painel produz M(X,W) = X∪(W∩S). Qual alternativa-relatório reúne corretamente a estrutura dos agrupamentos, suas quantidades e o alcance de M entre dois agrupamentos B_Y e B_Z?",
+    "alternatives": {
+      "A": "Há 4 perfis possíveis. Os agrupamentos B_Y formam uma partição de P(A), e cada um possui 4 configurações; em particular, B_∅ contém ∅ sem ser vazio. Para Y,Z⊆S, o conjunto de saídas {M(X,W) : X∈B_Y e W∈B_Z} é exatamente B_(Y∪Z).",
+      "B": "Há 32 perfis possíveis. Os agrupamentos B_Y formam uma partição de P(A), e cada um possui 8 configurações; em particular, B_∅ contém ∅ sem ser vazio. Para Y,Z⊆S, o conjunto de saídas {M(X,W) : X∈B_Y e W∈B_Z} é exatamente B_(Y∪Z).",
+      "C": "Há 4 perfis possíveis. Os agrupamentos B_Y formam uma partição de P(A), e cada um possui 8 configurações; em particular, B_∅ contém ∅ sem ser vazio. Para Y,Z⊆S, o conjunto de saídas {M(X,W) : X∈B_Y e W∈B_Z} é exatamente B_(Y∩Z).",
+      "D": "Há 4 perfis possíveis. Os agrupamentos B_Y formam uma partição de P(A), e cada um possui 8 configurações; em particular, B_∅ contém ∅ sem ser vazio. Para Y,Z⊆S, o conjunto de saídas {M(X,W) : X∈B_Y e W∈B_Z} é exatamente B_(Y∪Z).",
+      "E": "Há 4 perfis possíveis. Os agrupamentos B_Y formam uma partição de P(A), e cada um possui 8 configurações; em particular, B_∅ contém ∅ sem ser vazio. Para Y,Z⊆S, o conjunto de saídas {M(X,W) : X∈B_Y e W∈B_Z} é um subconjunto próprio de B_(Y∪Z)."
+    },
+    "correct_label": "D",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'no_implausible_distractor' não atendido; qualidade dos distratores pontuou 1, abaixo do mínimo exigido (2); diversidade semântica pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: A resposta indicada está matematicamente correta: {a,c} pertence a ambos os conjuntos, e A distingue C_∅ de C_{a,b}. Contudo, os três primeiros distratores são estruturalmente frágeis: eles reconhecem explicitamente uma interseção entre grupos e, ainda assim, aprovam uma organização exigida no enunciado como sendo sem sobreposição. Em especial, o segundo também contradiz internamente a própria evidência de que os conjuntos não são iguais."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Lógica proposicional",
+    "stem": "Em um sistema de controle de acesso a uma câmara de testes, p significa que o bloqueio físico está acionado, q significa que a credencial de inspeção está válida, r significa que o canal primário de sincronização está ativo e s significa que o canal secundário de sincronização está ativo. A regra registrada pelo sistema é ¬p ∧ q → r ⊕ s. Qual alternativa apresenta uma forma normal conjuntiva logicamente equivalente a essa regra?",
+    "alternatives": {
+      "A": "(p ∨ ¬q ∨ r ∨ s) ∧ (¬p ∨ ¬q ∨ ¬r ∨ ¬s)",
+      "B": "(p ∨ ¬q ∨ r ∨ s) ∧ (p ∨ ¬q ∨ ¬r ∨ ¬s)",
+      "C": "(¬p ∨ ¬q ∨ r ∨ s) ∧ (¬p ∨ ¬q ∨ ¬r ∨ ¬s)",
+      "D": "(p ∨ ¬q ∨ r ∨ s) ∧ (p ∨ ¬q ∨ r ∨ s)",
+      "E": "(p ∨ ¬q ∨ r ∨ ¬s) ∧ (p ∨ ¬q ∨ ¬r ∨ s)"
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 2,
+      "P": 1
+    },
+    "composite_score": 2.35,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Equivalências e inferências lógicas",
+    "stem": "Em uma auditoria de uma malha de estações de teste, D é o conjunto de estações registradas no ciclo auditado, que pode estar vazio, e P(t) significa que a estação t apresentou o sinal de calibração de referência. A regra arquivada é:\n\n(∃x∈D)(∀y∈D)(P(y)↔y=x).\n\nQuatro pareceres foram encaminhados. Qual deve ser aprovado?\n\nA) A regra requer ao menos uma estação com sinal, mas admite várias estações sinalizadas; uma codificação equivalente é apenas (∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v). Se D=∅, a regra é verdadeira, pois a condição sobre y não encontra exceções. A troca para (∀y∈D)(∃x∈D)(P(y)↔y=x) preserva o requisito, já que x continua pertencendo a D.\n\nB) A regra exige uma estação sinalizada e restringe o sinal a essa estação. Uma codificação equivalente é ((∃x∈D)P(x))∧((∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v)). Se D=∅, a regra é falsa. Ao passar para (∀y∈D)(∃x∈D)(P(y)↔y=x), a escolha de x pode depender de y, e a nova fórmula pode valer em situações que não atendem à regra arquivada.\n\nC) A regra exige uma estação sinalizada e restringe o sinal a essa estação. A codificação com existência e restrição de duplicidade é equivalente apenas quando D contém ao menos duas estações. Se D=∅, a regra é falsa. A troca para (∀y∈D)(∃x∈D)(P(y)↔y=x) mantém o mesmo requisito, pois a bicondicional impede que x varie conforme y.\n\nD) A regra permite que não haja estação sinalizada, desde que duas estações distintas não apresentem o sinal ao mesmo tempo; por isso, a parcela existencial pode ser retirada da codificação. Se D=∅, a regra é falsa. A fórmula com os quantificadores trocados deixa de ser equivalente apenas porque passa a exigir que cada estação apresente o sinal de referência.",
+    "alternatives": {
+      "A": "A regra exige uma estação sinalizada, mas admite que outras estações também apresentem o sinal. Uma codificação equivalente é ((∃x∈D)P(x))∧((∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v)). Se D=∅, a regra é falsa. Ao passar para (∀y∈D)(∃x∈D)(P(y)↔y=x), a escolha de x pode depender de y, e a nova fórmula pode valer em situações que não atendem à regra arquivada.",
+      "B": "A regra exige uma estação sinalizada e restringe o sinal a essa estação. Uma codificação equivalente é ((∃x∈D)P(x))∧((∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v)). Se D=∅, a regra é verdadeira, pois a condição universal interna não encontra estação que a contrarie. Ao passar para (∀y∈D)(∃x∈D)(P(y)↔y=x), a escolha de x pode depender de y, e a nova fórmula pode valer em situações que não atendem à regra arquivada.",
+      "C": "A regra exige uma estação sinalizada e restringe o sinal a essa estação. Uma codificação equivalente é ((∃x∈D)P(x))∧((∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v)). Se D=∅, a regra é falsa. Ao passar para (∀y∈D)(∃x∈D)(P(y)↔y=x), a nova fórmula preserva o requisito, pois a bicondicional obriga o mesmo x a servir para cada y.",
+      "D": "A regra exige uma estação sinalizada e restringe o sinal a essa estação. Uma codificação equivalente é (∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v). Se D=∅, a regra é falsa. Ao passar para (∀y∈D)(∃x∈D)(P(y)↔y=x), a escolha de x pode depender de y, e a nova fórmula pode valer em situações que não atendem à regra arquivada.",
+      "E": "B) A regra exige uma estação sinalizada e restringe o sinal a essa estação. Uma codificação equivalente é ((∃x∈D)P(x))∧((∀u∈D)(∀v∈D)((P(u)∧P(v))→u=v)). Se D=∅, a regra é falsa. Ao passar para (∀y∈D)(∃x∈D)(P(y)↔y=x), a escolha de x pode depender de y, e a nova fórmula pode valer em situações que não atendem à regra arquivada."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=2.10 não ultrapassou o limiar τ=2.33. L: O trecho c48, isoladamente, explicita a equivalência entre (∀x∈D)P(x) e (∀x∈E)(x∈D→P(x)), mas não declara de modo completo a conversão do testemunho existencial não conforme em um testemunho externo a D. O trecho c36 fornece isoladamente a contrapositiva necessária para essa conversão, mas não a regra de mudança de domínio. Portanto, a resposta integral requer combinar ao menos esses dois trechos não contíguos, com inferência. | R: Há etapas encadeadas: reescrever ou interpretar a condição universal como x∈D→P(x), aplicar a contrapositiva a um x com ¬P(x), e então comparar os componentes existenciais dos protocolos. Contudo, a formalização em etapas pode ser encurtada por uma leitura semântica direta: se todos os elementos de D satisfazem P e há um elemento de E que não satisfaz P, esse elemento está fora de D. Assim, não é indispensável percorrer separadamente todas as etapas formais para chegar ao resultado. | C: A resolução exige o conceito de contrapositiva e a interpretação da mudança de domínio de um quantificador universal, mas o racional necessário permanece curto: elementos de D satisfazem P; logo, um elemento com ¬P não pode estar em D; consequentemente, o testemunho existencial está em E\\D. Não demanda desenvolvimento extenso nem conceitos densos além dos apresentados no material. | G: Não basta localizar ou recordar literalmente uma frase do texto-fonte: é preciso aplicar a equivalência de mudança de domínio e o raciocínio contrapositivo ao predicado dado, comparando os dois protocolos. Ainda assim, trata-se de aplicação e compreensão de regras lógicas padrão, sem uma análise extensa de casos ou síntese complexa. | P: Pelo menos três distratores podem ser eliminados sem resolver integralmente a equivalência entre os protocolos. O primeiro contradiz imediatamente a contrapositiva de x∈D→P(x); o segundo erra ao afirmar que não há conclusão sobre D; e o terceiro confunde a contrapositiva com a conversa, pois x∉D não implica ¬P(x). Apenas o último exige verificar a equivalência completa dos protocolos para ser descartado."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Métodos de prova matemática",
+    "stem": "Em uma auditoria matemática de um processo de certificação, D é o conjunto de unidades examinadas em certo ciclo, admitindo-se que D possa ser vazio. Para u∈D, A(u) indica que a unidade apresentou rastreabilidade documental, e B(u) indica que ela passou na verificação numérica. A política registrada é U=(∀u∈D)(A(u)→B(u)). Uma alegação concorrente é C=¬(∃u∈D)(A(u)∧¬B(u)).\n\nEntre os roteiros de auditoria apresentados, qual deve ser acolhido para sustentar U↔C, inclusive quando não houver unidades no ciclo?",
+    "alternatives": {
+      "A": "A) Partindo de U, suponha-se que C falhe. Então há uma unidade u∈D com A(u)∧¬B(u); ao aplicar U a essa unidade, obtém-se B(u), em conflito com ¬B(u). Assim, C decorre de U. Como U e C descrevem a exigência de que uma unidade com A não apresente falha em B, conclui-se U↔C. Se D=∅, U e C permanecem verdadeiras.",
+      "B": "B) Partindo de U, suponha-se que C falhe. Então há uma unidade u∈D com A(u)∧¬B(u); ao aplicar U a essa unidade, obtém-se B(u), em conflito com ¬B(u). Assim, C decorre de U. No retorno, tome-se u∈D sem condição particular. Sob C, ¬B(u) conduz a ¬A(u), pois A(u) junto de ¬B(u) contrariaria C. Portanto, A(u)→B(u), e a escolha arbitrária de u permite obter U. Se D=∅, U e C permanecem verdadeiras.",
+      "C": "E) Partindo de U, suponha-se que C falhe. Então há uma unidade u∈D com A(u)∧¬B(u); ao aplicar U a essa unidade, obtém-se B(u), em conflito com ¬B(u). Assim, C decorre de U. No retorno, fixe-se uma unidade u∈D. Sob C, ¬B(u) conduz a ¬A(u), pois A(u) junto de ¬B(u) contrariaria C. Portanto, A(u)→B(u), e essa unidade escolhida permite obter U. Se D=∅, U e C permanecem verdadeiras.",
+      "D": "C) Partindo de U, suponha-se que C falhe. Então há uma unidade u∈D com A(u)∧B(u); ao aplicar U a essa unidade, obtém-se B(u), o que exclui a falha de C. No retorno, tome-se u∈D sem condição particular. Sob C, ¬B(u) conduz a ¬A(u), pois A(u) junto de ¬B(u) contrariaria C. Portanto, A(u)→B(u), e a escolha arbitrária de u permite obter U. Se D=∅, U e C permanecem verdadeiras.",
+      "E": "D) Partindo de U, suponha-se que C falhe. Então há uma unidade u∈D com A(u)∧¬B(u); ao aplicar U a essa unidade, obtém-se B(u), em conflito com ¬B(u). Assim, C decorre de U. No retorno, tome-se u∈D sem condição particular. Sob C, B(u) conduz a A(u), pois ¬A(u) junto de B(u) contrariaria C. Portanto, A(u)→B(u), e a escolha arbitrária de u permite obter U. Se D=∅, U e C permanecem verdadeiras."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Relações binárias",
+    "stem": "Em um núcleo de conformidade, os perfis A={Lira, Mosa, Nura, Pavo} e os selos operacionais B={Âmbar, Cobalto, Jade} estão ligados pela relação R={(Lira,Âmbar),(Mosa,Âmbar),(Mosa,Cobalto),(Nura,Cobalto),(Pavo,Jade)}. A equipe forma H=R⁻¹∘R e pretende adotar H* como base de agrupamento. Qual relatório integrado deve ser selecionado?",
+    "alternatives": {
+      "A": "Tomando H=R∘R⁻¹, H é uma relação sobre B formada por {(Âmbar,Âmbar),(Cobalto,Cobalto),(Jade,Jade),(Âmbar,Cobalto),(Cobalto,Âmbar)}. Ela é reflexiva, simétrica e transitiva; logo H*=H, uma equivalência mínima sobre B que prolonga H.",
+      "B": "H é uma relação sobre A formada por {(Lira,Lira),(Mosa,Mosa),(Nura,Nura),(Pavo,Pavo),(Lira,Mosa),(Mosa,Lira),(Mosa,Nura),(Nura,Mosa)}. Ela é reflexiva e simétrica, mas não transitiva, pois (Lira,Mosa) e (Mosa,Nura) pertencem a H, enquanto (Lira,Nura) não pertence. Em H*, acrescentam-se (Lira,Nura) e (Nura,Lira). Assim, H* é uma equivalência que prolonga H, mas não se conclui que seja a equivalência mínima com essa propriedade.",
+      "C": "H é uma relação sobre A formada por {(Lira,Lira),(Mosa,Mosa),(Nura,Nura),(Pavo,Pavo),(Lira,Mosa),(Mosa,Lira),(Mosa,Nura),(Nura,Mosa)}. Ela é reflexiva e simétrica, mas não transitiva, pois (Lira,Mosa) e (Mosa,Nura) pertencem a H, enquanto (Lira,Nura) não pertence. Em H*, acrescentam-se (Lira,Nura) e (Nura,Lira). Assim, H* é uma equivalência mínima que prolonga H.",
+      "D": "H é uma relação sobre A formada por {(Lira,Lira),(Mosa,Mosa),(Nura,Nura),(Pavo,Pavo),(Lira,Mosa),(Mosa,Lira)}. Ela é reflexiva, simétrica e transitiva. Portanto, H*=H, que é uma equivalência mínima que prolonga H.",
+      "E": "H é uma relação sobre A formada por {(Lira,Lira),(Mosa,Mosa),(Nura,Nura),(Pavo,Pavo),(Lira,Mosa),(Mosa,Lira),(Mosa,Nura),(Nura,Mosa)}. Ela é reflexiva, simétrica e transitiva, embora (Lira,Nura) não pertença a H. Em H*, acrescentam-se (Lira,Nura) e (Nura,Lira). Assim, H* é uma equivalência mínima que prolonga H."
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 2,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Propriedades e fechos de relações",
+    "stem": "Em uma organização fictícia, os setores formam o conjunto V={Âmulo, Brisa, Círculo, Domo, Estuário}. Em dois turnos, foram registrados encaminhamentos autorizados: P={(Âmulo,Brisa),(Círculo,Domo)} e Q={(Brisa,Círculo),(Domo,Estuário)}. A diretoria pretende escolher um parecer que trate conjuntamente os registros, os acréscimos de autocontato e as autorizações induzidas por encaminhamentos sucessivos. Qual parecer deve ser aprovado?",
+    "alternatives": {
+      "A": "O parecer aprovado afirma que P e Q já atendem isoladamente à exigência de propagação por encadeamento, de modo que seus fechos transitivos permanecem P e Q. Contudo, P∪Q gera os encaminhamentos adicionais (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Domo), (Brisa,Estuário) e (Círculo,Estuário) em razão dos pares diagonais introduzidos pelo fecho reflexivo; por isso, a união dos fechos transitivos individuais fica estritamente contida no fecho transitivo de P∪Q. A menor relação reflexiva e transitiva que contém P∪Q reúne os dez pares de alcance (Âmulo,Brisa), (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Círculo), (Brisa,Domo), (Brisa,Estuário), (Círculo,Domo), (Círculo,Estuário), (Domo,Estuário), além dos cinco pares diagonais (Âmulo,Âmulo), (Brisa,Brisa), (Círculo,Círculo), (Domo,Domo) e (Estuário,Estuário).",
+      "B": "O parecer aprovado afirma que P e Q já atendem isoladamente à exigência de propagação por encadeamento, de modo que seus fechos transitivos permanecem P e Q. Contudo, P∪Q gera os encaminhamentos adicionais (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Domo), (Brisa,Estuário) e (Círculo,Estuário); por isso, a união dos fechos transitivos individuais fica estritamente contida no fecho transitivo de P∪Q. A menor relação reflexiva e transitiva que contém P∪Q reúne os onze pares de alcance (Âmulo,Brisa), (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Âmulo), (Brisa,Círculo), (Brisa,Domo), (Brisa,Estuário), (Círculo,Domo), (Círculo,Estuário), (Domo,Estuário), além dos cinco pares diagonais (Âmulo,Âmulo), (Brisa,Brisa), (Círculo,Círculo), (Domo,Domo) e (Estuário,Estuário).",
+      "C": "O parecer aprovado afirma que P e Q já atendem isoladamente à exigência de propagação por encadeamento, de modo que seus fechos transitivos permanecem P e Q. Contudo, P∪Q gera os encaminhamentos adicionais (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Domo), (Brisa,Estuário) e (Círculo,Estuário); por isso, a união dos fechos transitivos individuais coincide com o fecho transitivo de P∪Q. A menor relação reflexiva e transitiva que contém P∪Q reúne os dez pares de alcance (Âmulo,Brisa), (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Círculo), (Brisa,Domo), (Brisa,Estuário), (Círculo,Domo), (Círculo,Estuário), (Domo,Estuário), além dos cinco pares diagonais (Âmulo,Âmulo), (Brisa,Brisa), (Círculo,Círculo), (Domo,Domo) e (Estuário,Estuário).",
+      "D": "O parecer aprovado afirma que P e Q já atendem isoladamente à exigência de propagação por encadeamento, de modo que seus fechos transitivos permanecem P e Q. Contudo, P∪Q gera os encaminhamentos adicionais (Âmulo,Círculo), (Âmulo,Domo), (Brisa,Domo), (Brisa,Estuário) e (Círculo,Estuário); por isso, a união dos fechos transitivos individuais fica estritamente contida no fecho transitivo de P∪Q. A menor relação reflexiva e transitiva que contém P∪Q reúne os nove pares de alcance (Âmulo,Brisa), (Âmulo,Círculo), (Âmulo,Domo), (Brisa,Círculo), (Brisa,Domo), (Brisa,Estuário), (Círculo,Domo), (Círculo,Estuário), (Domo,Estuário), além dos cinco pares diagonais (Âmulo,Âmulo), (Brisa,Brisa), (Círculo,Círculo), (Domo,Domo) e (Estuário,Estuário).",
+      "E": "O parecer aprovado afirma que P e Q já atendem isoladamente à exigência de propagação por encadeamento, de modo que seus fechos transitivos permanecem P e Q. Contudo, P∪Q gera os encaminhamentos adicionais (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Domo), (Brisa,Estuário) e (Círculo,Estuário); por isso, a união dos fechos transitivos individuais fica estritamente contida no fecho transitivo de P∪Q. A menor relação reflexiva e transitiva que contém P∪Q reúne os dez pares de alcance (Âmulo,Brisa), (Âmulo,Círculo), (Âmulo,Domo), (Âmulo,Estuário), (Brisa,Círculo), (Brisa,Domo), (Brisa,Estuário), (Círculo,Domo), (Círculo,Estuário), (Domo,Estuário), além dos cinco pares diagonais (Âmulo,Âmulo), (Brisa,Brisa), (Círculo,Círculo), (Domo,Domo) e (Estuário,Estuário)."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'no_length_imbalance' não atendido. Observações do avaliador: A relação correta é a menor relação simétrica e transitiva que contém E: cada componente conexa de E deve tornar-se um bloco completo, resultando em P×P ∪ Q×Q, com 20 pares. Contudo, a alternativa correta se destaca por ser mais longa e mais detalhada: apresenta simultaneamente expressão da relação, cardinalidade, matriz completa de seis linhas e justificativa extensa, enquanto a maior parte dos distratores não traz matriz completa nem nível equivalente de detalhamento."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Funções",
+    "stem": "Em uma central de triagem de amostras, cada item de A recebe um código de B pela função F, e cada código é encaminhado a uma faixa de C pela função G.\n\nA = {Arco, Brisa, Cedro, Delta, Fenda}\nB = {cobre, índigo, lilás, musgo, pérola}\nC = {faixa-1, faixa-2, faixa-3}\n\nTabela de F:\n\n| item de A | F |\n|---|---|\n| Arco | cobre |\n| Brisa | índigo |\n| Cedro | lilás |\n| Delta | musgo |\n| Fenda | pérola |\n\nTabela de G:\n\n| código de B | G |\n|---|---|\n| cobre | faixa-2 |\n| índigo | faixa-1 |\n| lilás | faixa-2 |\n| musgo | faixa-3 |\n| pérola | faixa-1 |\n\nSejam X = {Arco, Brisa}, U = {faixa-1, faixa-2} e H = G∘F. A coordenação recebeu pareceres concorrentes sobre a seleção de itens que alcançam U e sobre a possibilidade de reverter o encaminhamento após restringi-lo a essa seleção. Qual parecer deve ser aprovado?",
+    "alternatives": {
+      "A": "O parecer aprovado afirma que H(X) = {faixa-1, faixa-2}, D = H⁻¹(U) = {Arco, Brisa, Cedro, Fenda} e H⁻¹(H(X)) = X. A restrição H|D é sobrejetora em U, mas não é injetora, pois Arco e Cedro alcançam faixa-2, enquanto Brisa e Fenda alcançam faixa-1. Consequentemente, a relação obtida pela inversão dos pares de H|D não é uma função.",
+      "B": "O parecer aprovado afirma que H(X) = {faixa-2} e, por isso, H⁻¹(H(X)) = {Arco, Cedro}; ainda assim, D = H⁻¹(U) = {Arco, Brisa, Cedro, Fenda}. A restrição H|D é sobrejetora em U, mas não é injetora, pois Arco e Cedro alcançam faixa-2, enquanto Brisa e Fenda alcançam faixa-1. Consequentemente, a relação obtida pela inversão dos pares de H|D não é uma função.",
+      "C": "O parecer aprovado afirma que H(X) = {faixa-1, faixa-2}, D = H⁻¹(U) = {Arco, Brisa, Cedro, Fenda} e H⁻¹(H(X)) = {Arco, Brisa, Cedro, Fenda}, portanto H⁻¹(H(X)) ≠ X. A restrição H|D é sobrejetora em U, mas não é injetora, pois Arco e Cedro alcançam faixa-2, enquanto Brisa e Fenda alcançam faixa-1. Consequentemente, a relação obtida pela inversão dos pares de H|D não é uma função.",
+      "D": "O parecer aprovado afirma que H(X) = {faixa-1, faixa-2}, D = H⁻¹(U) = {Arco, Brisa, Cedro, Fenda} e H⁻¹(H(X)) = {Arco, Brisa, Cedro, Fenda}, portanto H⁻¹(H(X)) ≠ X. A restrição H|D é sobrejetora em U, mas não é injetora, pois Arco e Cedro alcançam faixa-2, enquanto Brisa e Fenda alcançam faixa-1. Consequentemente, a relação obtida pela inversão dos pares de H|D é uma função, pois H|D é uma função.",
+      "E": "O parecer aprovado afirma que H(X) = {faixa-1, faixa-2}, D = H⁻¹(U) = {Arco, Brisa, Cedro, Fenda} e H⁻¹(H(X)) = {Arco, Brisa, Cedro, Fenda}, portanto H⁻¹(H(X)) ≠ X. A restrição H|D não é sobrejetora em U, embora não seja injetora, pois Arco e Cedro alcançam faixa-2, enquanto Brisa e Fenda alcançam faixa-1. Consequentemente, a relação obtida pela inversão dos pares de H|D não é uma função."
+    },
+    "correct_label": "C",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 3,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.8,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=2.10 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado sustenta todo o relatório. O trecho c111 permite verificar que R é função; c113 define injetividade e permite identificar a colisão em Bruma; c115 estabelece a relação entre injetividade e a inversa ser função; e c116 fornece a propriedade das imagens de interseções. Além disso, é necessário calcular as imagens dos subconjuntos dados. Portanto, a conclusão combina trechos não contíguos com aplicação aos pares do enunciado. | R: Há várias verificações: conferir que cada elemento de S tem uma única imagem, identificar a colisão Lótus/Ônix em Bruma e sua consequência para a relação inversa, calcular P∩Q e comparar as imagens. Contudo, as verificações não dependem estritamente de uma cadeia única e ordenada: por exemplo, os cálculos com P e Q podem ser feitos sem antes demonstrar formalmente a não injetividade. Assim, há etapas encadeadas, mas algumas podem ser tratadas independentemente. | C: A resolução exige aplicar, de modo breve, os conceitos de função, injetividade, relação inversa e imagem de conjuntos, além de executar interseção e comparação de conjuntos. Esses conceitos não estão todos explicitados no enunciado, mas o racional necessário é curto e não envolve desenvolvimento técnico denso. | G: Não basta recordar uma definição ou localizar uma frase: é preciso aplicar as definições aos pares de R, detectar a repetição de Bruma e calcular P∩Q, R(P), R(Q) e suas interseções. Ainda assim, são aplicações diretas e rotineiras dos conceitos, sem exigir uma síntese ou avaliação complexa. | P: Dois ou mais distratores podem ser eliminados sem resolver integralmente todos os componentes do relatório. O primeiro erra imediatamente ao afirmar que Lótus e Ônix recebem Duna; o segundo contradiz diretamente o fato de Bruma apontar para duas origens na relação invertida; o terceiro erra a interseção P∩Q, que é {Tálio}; e o quarto omite Bruma de R(P)∩R(Q). Logo, há vários distratores localmente refutáveis."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Sequências finitas e relações n-árias",
+    "stem": "Em uma operação de inventário por drones, três códigos de percurso foram registrados por pares índice-valor:\n\nP = {(0,14),(1,6),(2,11)}\nQ = {(1,14),(2,6),(3,11)}\nR = {(0,14),(1,6),(2,11)}\n\nO índice integra o código. Assim, dois códigos coincidem apenas quando seus pares índice-valor coincidem.\n\nA relação A reúne registros na ordem (drone, doca, código):\n\nA = {(Astra, Doca-Lua, P), (Boreal, Doca-Sol, Q), (Cirro, Doca-Lua, R)}.\n\nA relação B reúne registros na ordem (código, cápsula, situação):\n\nB = {(P, Cápsula-47, liberada), (S, Cápsula-88, pendente)},\n\nem que S = {(0,8),(1,8)}.\n\nO centro operacional forma um registro único quando um registro de A e um de B têm códigos completos coincidentes. Nesse registro, o código compartilhado aparece uma única vez, e os campos ficam na ordem (drone, doca, código, cápsula, situação). Depois, o painel mantém os campos situação, doca e cápsula, nessa ordem, registrando uma ocorrência quando o mesmo resultado surge mais de uma vez.\n\nQual parecer integrado deve ser aprovado?",
+    "alternatives": {
+      "A": "O parecer deve registrar os três registros combinados (Astra, Doca-Lua, P, Cápsula-47, liberada), (Boreal, Doca-Sol, Q, Cápsula-47, liberada) e (Cirro, Doca-Lua, P, Cápsula-47, liberada). Cada registro combinado tem grau 5. No painel final, após a supressão da repetição, ficam as triplas (liberada, Doca-Lua, Cápsula-47) e (liberada, Doca-Sol, Cápsula-47). O registro de B associado a S permanece sem combinação.",
+      "B": "O parecer deve registrar os dois registros combinados (Astra, Doca-Lua, P, P, Cápsula-47, liberada) e (Cirro, Doca-Lua, P, P, Cápsula-47, liberada). Cada registro combinado tem grau 6. No painel final, após a supressão da repetição, fica a tripla (liberada, Doca-Lua, Cápsula-47). O registro de Boreal, associado a Q, e o registro de B associado a S permanecem sem combinação.",
+      "C": "O parecer deve registrar o registro combinado (Astra, Doca-Lua, P, Cápsula-47, liberada). Esse registro combinado tem grau 5. No painel final, após a supressão da repetição, fica a tripla (liberada, Doca-Lua, Cápsula-47). Os registros de Boreal, associado a Q, e de Cirro, associado a R, bem como o registro de B associado a S, permanecem sem combinação.",
+      "D": "O parecer deve registrar os dois registros combinados (Astra, Doca-Lua, P, Cápsula-47, liberada) e (Cirro, Doca-Lua, P, Cápsula-47, liberada). Cada registro combinado tem grau 5. No painel final, após a supressão da repetição, fica a tripla (Doca-Lua, Cápsula-47, liberada). O registro de Boreal, associado a Q, e o registro de B associado a S permanecem sem combinação.",
+      "E": "O parecer deve registrar os dois registros combinados (Astra, Doca-Lua, P, Cápsula-47, liberada) e (Cirro, Doca-Lua, P, Cápsula-47, liberada). Cada registro combinado tem grau 5. No painel final, após a supressão da repetição, fica a tripla (liberada, Doca-Lua, Cápsula-47). O registro de Boreal, associado a Q, e o registro de B associado a S permanecem sem combinação."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 1,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.5,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Sequências infinitas e recorrências",
+    "stem": "Em uma operação fictícia de armazenamento orbital, yₙ representa a quantidade de módulos de reserva disponíveis ao término do ciclo n, com n pertencente aos inteiros positivos. O registro começa com y₁=4 e, a partir do segundo ciclo, segue\n\nyₙ=yₙ₋₁+⌊yₙ₋₁/2⌋+n.\n\nA coordenação recebeu os seguintes pareceres sobre a evolução do estoque. Qual parecer deve ser aprovado?\n\nA) Para n≥1, yₙ coincide com zₙ=(3/2)ⁿ[4+Σ(k=1 até n) k(2/3)ᵏ]; assim, a expressão fornece o valor exato do estoque e implica yₙ→+∞.\n\nB) Para n≥1, yₙ≤zₙ, onde z₁=4 e zₙ=(3/2)zₙ₋₁+n para n≥2. Além disso,\n\nzₙ=(3/2)ⁿ⁻¹[4+Σ(k=2 até n) k(2/3)ᵏ⁻¹].\n\nComo yₙ≥4(3/2)ⁿ⁻¹ nesse mesmo domínio, conclui-se que yₙ→+∞.\n\nC) Para n≥1, yₙ≤zₙ, com z₁=4 e zₙ=(3/2)zₙ₋₁+n; porém, ao dividir por (3/2)ⁿ, obtém-se zₙ=(3/2)ⁿ[4+Σ(k=2 até n) k(2/3)ᵏ], o que mostra que yₙ permanece limitado.\n\nD) Tomando y₁ como se fosse y₀, vale yₙ≤zₙ para n≥0, onde zₙ=(3/2)ⁿ[4+Σ(k=1 até n) k(2/3)ᵏ⁻¹]; como ⌊yₙ₋₁/2⌋=yₙ₋₁/2, esse majorante também é a fórmula do estoque.",
+    "alternatives": {
+      "A": "Para n≥1, yₙ≤zₙ, onde z₁=4 e zₙ=(3/2)zₙ₋₁+n para n≥2. Além disso, zₙ=(3/2)ⁿ⁻¹[4+Σ(k=2 até n) k(2/3)ᵏ⁻¹]. Como zₙ→+∞ e yₙ≤zₙ nesse mesmo domínio, conclui-se que yₙ→+∞.",
+      "B": "Para n≥1, yₙ=zₙ, onde z₁=4 e zₙ=(3/2)zₙ₋₁+n para n≥2. Além disso, zₙ=(3/2)ⁿ⁻¹[4+Σ(k=2 até n) k(2/3)ᵏ⁻¹]. Como yₙ≥4(3/2)ⁿ⁻¹ nesse mesmo domínio, conclui-se que yₙ→+∞.",
+      "C": "Para n≥1, yₙ≤zₙ, onde z₁=4 e zₙ=(3/2)zₙ₋₁+n para n≥2. Além disso, zₙ=(3/2)ⁿ⁻¹[4+Σ(k=2 até n) k(2/3)ᵏ]. Como yₙ≥4(3/2)ⁿ⁻¹ nesse mesmo domínio, conclui-se que yₙ→+∞.",
+      "D": "Para n≥1, yₙ≤zₙ, onde z₁=4 e zₙ=(3/2)zₙ₋₁+n para n≥2. Além disso, zₙ=(3/2)ⁿ⁻¹[4+Σ(k=2 até n) k(2/3)ᵏ⁻¹]. Como yₙ≥4(8/5)ⁿ⁻¹ nesse mesmo domínio, conclui-se que yₙ→+∞.",
+      "E": "B) Para n≥1, yₙ≤zₙ, onde z₁=4 e zₙ=(3/2)zₙ₋₁+n para n≥2. Além disso, zₙ=(3/2)ⁿ⁻¹[4+Σ(k=2 até n) k(2/3)ᵏ⁻¹]. Como yₙ≥4(3/2)ⁿ⁻¹ nesse mesmo domínio, conclui-se que yₙ→+∞."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 3,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.8,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Cardinalidade de conjuntos infinitos",
+    "stem": "Em um observatório de automação, uma rotina r registra, para cada instante natural n, o valor r(n)∈{0,1}: valor 1 indica acionamento e valor 0 indica inatividade. Seja S a coleção dessas rotinas; há rotinas em S com infinitos acionamentos e infinitas inativações. Para uma rotina r, o observatório associa o conjunto dos instantes em que r assume valor 1.\n\nA equipe apresenta simultaneamente dois catálogos. O primeiro é h:N→S e é alegado como suficiente para abranger as rotinas. O segundo é g:S→P(S), em que g(r) é um perfil formado por rotinas de S, e é alegado como suficiente para abranger os perfis possíveis. Aqui, P(S) reúne as coleções de rotinas extraídas de S.\n\nQual parecer integrado deve ser aprovado acerca dos dois catálogos, distinguindo os domínios de h e g e justificando a relação entre S e P(S)?",
+    "alternatives": {
+      "A": "A associação r↦{n∈N:r(n)=1} é bijetiva entre S e P(N). Para o catálogo h, tome D={n∈N:h(n)(n)=0}; a rotina que vale 1 precisamente nos instantes fora de D difere de h(n) no instante n para cada n, logo h não é sobrejetora e S não é enumerável. Já para g:S→P(S), o perfil T={r∈S:r∉g(r)} difere de g(r) quanto à presença de r, para r∈S; assim, g também não é sobrejetora. A aplicação r↦{r} fornece uma injeção de S em P(S), e a falha de sobrejeção de qualquer g desse tipo implica |S|<|P(S)|. Como S não admite catalogação por N, P(S) tampouco admite uma catalogação natural.",
+      "B": "A associação r↦{n∈N:r(n)=1} é bijetiva entre S e P(N). Para o catálogo h, tome D={n∈N:h(n)(n)=0}; a rotina que vale 1 precisamente nos instantes de D difere de h(n) no instante n para cada n, logo h não é sobrejetora e S não é enumerável. Já para g:S→P(S), o perfil T={r∈S:r∉g(r)} difere de g(r) quanto à presença de r, para r∈S; assim, g também não é sobrejetora. A aplicação r↦{r} fornece uma injeção de S em P(S), e a falha de sobrejeção de qualquer g desse tipo implica |S|<|P(S)|. Como S não admite catalogação por N, P(S) tampouco admite uma catalogação natural.",
+      "C": "A associação r↦{n∈N:r(n)=1} é bijetiva entre S e P(N). Para o catálogo h, tome D={n∈N:h(n)(n)=0}; a rotina que vale 1 precisamente nos instantes de D difere de h(n) no instante n para cada n, logo h não é sobrejetora e S não é enumerável. Já para g:S→P(S), o perfil T={r∈S:r∈g(r)} difere de g(r) quanto à presença de r, para r∈S; assim, g também não é sobrejetora. A aplicação r↦{r} fornece uma injeção de S em P(S), e a falha de sobrejeção de qualquer g desse tipo implica |S|<|P(S)|. Como S não admite catalogação por N, P(S) tampouco admite uma catalogação natural.",
+      "D": "A associação r↦{n∈N:r(n)=1} é bijetiva entre S e P(N). Para o catálogo h, tome D={n∈N:h(n)(n)=0}; a rotina que vale 1 precisamente nos instantes de D difere de h(n) no instante n para cada n, logo h não é sobrejetora e S não é enumerável. Já para g:S→P(S), o perfil T={r∈S:r∉g(r)} difere de g(r) quanto à presença de r, para r∈S; assim, g também não é sobrejetora. A aplicação r↦{r} fornece uma injeção de S em P(S), e a falha de sobrejeção de g implica |S|=|P(S)|. Como S não admite catalogação por N, P(S) tampouco admite uma catalogação natural.",
+      "E": "A associação r↦{n∈N:r(n)=1} é bijetiva entre S e P(N). Para o catálogo h, tome D={n∈N:h(n)(n)=0}; a rotina que vale 1 precisamente nos instantes de D difere de h(n) no instante n para cada n, logo h não é injetora e S não é enumerável. Já para g:S→P(S), o perfil T={r∈S:r∉g(r)} difere de g(r) quanto à presença de r, para r∈S; assim, g também não é sobrejetora. A aplicação r↦{r} fornece uma injeção de S em P(S), e a falha de sobrejeção de qualquer g desse tipo implica |S|<|P(S)|. Como S não admite catalogação por N, P(S) tampouco admite uma catalogação natural."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 3,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.55,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Fundamentos de teoria dos grafos",
+    "stem": "Uma empresa mantém duas malhas físicas de estações, R e S. As conexões são bidirecionais; uma estação não se conecta a si própria e não há duplicação de conexão entre o mesmo par.\n\nNa malha R, as conexões registradas são:\n\n| Estação | Conexões diretas |\n|---|---|\n| A | B, C, D |\n| B | A, C |\n| C | A, B |\n| D | A, E |\n| E | D, F |\n| F | E |\n\nNa malha S, as conexões registradas são:\n\n| Estação | Conexões diretas |\n|---|---|\n| P | Q, S, T |\n| Q | P, R |\n| R | Q, S |\n| S | P, R |\n| T | P, U |\n| U | T |\n\nUm rascunho de correspondência entre as malhas já vinculou A a P e F a U. Para cada malha, a equipe também projeta uma rede de contingência sobre as mesmas estações: duas estações ficam conectadas nessa nova rede precisamente quando eram distintas e não possuíam conexão direta na malha de origem.\n\nQual parecer integrado deve ser aprovado sobre o rascunho, a compatibilidade estrutural das malhas e as redes de contingência?",
+    "alternatives": {
+      "A": "O parecer correto afirma que A→P e F→U são associações forçadas pelos graus, enquanto B, C, D e E ainda ficam indistintos nesse primeiro filtro. Contudo, o rascunho não admite prolongamento estrutural: entre os vizinhos B, C e D de A há a conexão B-C, ao passo que entre Q, S e T, vizinhos de P, não ocorre conexão interna. Assim, não se preservam simultaneamente as conexões e as ausências necessárias. As redes de contingência, porém, são estruturalmente compatíveis, pois a troca entre conexões e ausências elimina a diferença observada na malha de origem; nelas, A e P têm grau 2, F e U têm grau 4, e as demais estações têm grau 3.",
+      "B": "O parecer afirma que A→P e F→U são associações forçadas pelos graus, e que B, C, D e E também permanecem indistintos após a inspeção de suas vizinhanças. Contudo, o rascunho não admite prolongamento estrutural: entre os vizinhos B, C e D de A há a conexão B-C, ao passo que entre Q, S e T, vizinhos de P, não ocorre conexão interna. Assim, não se preservam simultaneamente as conexões e as ausências necessárias. As redes de contingência também não são estruturalmente compatíveis; nelas, A e P têm grau 2, F e U têm grau 4, e as demais estações têm grau 3, distribuição compatível com a troca de conexões por ausências, mas insuficiente para reparar a falha estrutural.",
+      "C": "O parecer correto afirma que A→P e F→U são associações forçadas pelos graus, enquanto B, C, D e E ainda ficam indistintos nesse primeiro filtro. Contudo, o rascunho não admite prolongamento estrutural: entre os vizinhos B, C e D de A há a conexão B-C, ao passo que entre Q, S e T, vizinhos de P, ocorre a conexão Q-S; a incompatibilidade surge mais adiante, quando se tenta preservar as conexões envolvendo D, E e F. Assim, não se preservam simultaneamente as conexões e as ausências necessárias. As redes de contingência também não são estruturalmente compatíveis; nelas, A e P têm grau 2, F e U têm grau 4, e as demais estações têm grau 3, distribuição compatível com a troca de conexões por ausências, mas insuficiente para reparar a falha estrutural.",
+      "D": "O parecer correto afirma que A→P e F→U são associações forçadas pelos graus, enquanto B, C, D e E ainda ficam indistintos nesse primeiro filtro. Contudo, o rascunho não admite prolongamento estrutural: entre os vizinhos B, C e D de A há a conexão B-C, ao passo que entre Q, S e T, vizinhos de P, não ocorre conexão interna. Assim, não se preservam simultaneamente as conexões e as ausências necessárias. As redes de contingência também não são estruturalmente compatíveis; nelas, A e P têm grau 3, F e U têm grau 5, e as demais estações têm grau 4, distribuição que decorreria da troca de conexões por ausências, mas insuficiente para reparar a falha estrutural.",
+      "E": "O parecer correto afirma que A→P e F→U são associações forçadas pelos graus, enquanto B, C, D e E ainda ficam indistintos nesse primeiro filtro. Contudo, o rascunho não admite prolongamento estrutural: entre os vizinhos B, C e D de A há a conexão B-C, ao passo que entre Q, S e T, vizinhos de P, não ocorre conexão interna. Assim, não se preservam simultaneamente as conexões e as ausências necessárias. As redes de contingência também não são estruturalmente compatíveis; nelas, A e P têm grau 2, F e U têm grau 4, e as demais estações têm grau 3, distribuição compatível com a troca de conexões por ausências, mas insuficiente para reparar a falha estrutural."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Probabilidade e estatística descritiva",
+    "stem": "Em um centro de distribuição de vacinas, dois registros binários são produzidos por remessa: R vale 1 quando há redirecionamento para câmara alternativa e 0 caso contrário; S vale 1 quando o lacre exige reinspeção e 0 caso contrário. Em um turno típico, Pr(R=1)=1/2 e Pr(S=1)=1/4, e os dois registros são independentes. O painel usa o indicador T=R+2S para priorizar a triagem.\n\nA gerência recebeu pareceres sobre a distribuição de T, suas medidas de centro e dispersão e a leitura de uma garantia baseada no desvio padrão. Qual parecer integrado deve ser aprovado?",
+    "alternatives": {
+      "A": "O parecer informa que T assume 0, 1, 2 e 3 com probabilidades 1/4 para cada valor, pois os quatro pares possíveis de R e S recebem o mesmo peso. Assim, E(T)=3/2, V(T)=5/4 e o desvio padrão é √5/2. A probabilidade exata de T pertencer ao intervalo [3/2−√5/2, 3/2+√5/2], centrado em 3/2 com raio de um desvio padrão, é 1/2. No intervalo de raio igual a dois desvios padrão, a massa efetiva é 1, enquanto a garantia de dispersão fornece probabilidade de pelo menos 3/4.",
+      "B": "O parecer aprovado informa que T assume 0, 1, 2 e 3 com probabilidades 3/8, 3/8, 1/8 e 1/8, respectivamente. Assim, E(T)=1, V(T)=5/8 e o desvio padrão é √(5/8), ao contabilizar o peso 2 de S linearmente na variância. A probabilidade exata de T pertencer ao intervalo [1−√(5/8), 1+√(5/8)] é 3/8. Já no intervalo de raio igual a dois desses desvios padrão, a massa efetiva é 7/8, enquanto a garantia de dispersão fornece probabilidade de pelo menos 3/4.",
+      "C": "O parecer aprovado informa que T assume 0, 1, 2 e 3 com probabilidades 3/8, 3/8, 1/8 e 1/8, respectivamente. Assim, E(T)=1, V(T)=1 e o desvio padrão é 1. A probabilidade exata de T pertencer ao intervalo [0,2], centrado em 1 com raio de um desvio padrão, é 7/8. Já no intervalo [−1,3], de raio igual a dois desvios padrão, a massa efetiva é 1, enquanto a desigualdade de dispersão garante probabilidade de pelo menos 3/4; a soma das variâncias que produz V(T)=1 decorre da linearidade de T, e não da independência entre R e S.",
+      "D": "O parecer aprovado informa que T assume 0, 1, 2 e 3 com probabilidades 3/8, 3/8, 1/8 e 1/8, respectivamente. Assim, E(T)=1, V(T)=1 e o desvio padrão é 1. A probabilidade exata de T pertencer ao intervalo [0,2], centrado em 1 com raio de um desvio padrão, é 7/8. Já no intervalo [−1,3], de raio igual a dois desvios padrão, a massa efetiva é 1, enquanto a desigualdade de dispersão apenas garante probabilidade de pelo menos 3/4; 3/4 não é a probabilidade exata nesse caso.",
+      "E": "O parecer aprovado informa que T assume 0, 1, 2 e 3 com probabilidades 3/8, 3/8, 1/8 e 1/8, respectivamente. Assim, E(T)=1, V(T)=1 e o desvio padrão é 1. A probabilidade exata de T pertencer ao intervalo [0,2], centrado em 1 com raio de um desvio padrão, é 7/8. Já no intervalo [−1,3], de raio igual a dois desvios padrão, a probabilidade exata é 3/4, pois esse é o valor fornecido pela garantia de dispersão para esse raio."
+    },
+    "correct_label": "D",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'no_implausible_distractor' não atendido; qualidade dos distratores pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: A resposta correta é única: entre 30 pares com X≠Y, as contagens das classes são 6, 12 e 12. Porém, pelo menos os segundo e o terceiro distratores são estruturalmente elimináveis sem realizar a contagem condicional: suas probabilidades de C=0, C=1 e C=2 não somam 1."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Probabilidade condicional e inferência bayesiana",
+    "stem": "Uma fábrica de placas cerâmicas recebe a produção de duas linhas, A e B, mutuamente exclusivas e exaustivas. Antes da inspeção, a chance de uma placa provir de A é 2/5, e a de provir de B é 3/5. Dois procedimentos de inspeção podem sinalizar irregularidades: U registra microfissuras e V registra desvio de esmaltação. Mantida fixa a linha de origem, os resultados de U e V não influenciam um ao outro.\n\nPara placas da linha A, Pr(U|A)=2/3 e Pr(V|A)=1/2. Para placas da linha B, Pr(U|B)=1/5 e Pr(V|B)=1/3. Seja Q o registro de que U ou V sinalizou uma irregularidade. Uma placa auditada apresentou Q.\n\nA comissão deve aprovar qual parecer integrado, que informe tanto a chance de a placa ser da linha A após esse registro quanto a fração de placas com os dois sinais entre as placas que apresentaram Q?",
+    "alternatives": {
+      "A": "Deve ser aprovado o parecer que informa Pr(A|Q)=25/46 e Pr(U∧V|Q)=13/46. Com a origem fixada, obtêm-se Pr(Q|A)=5/6 e Pr(Q|B)=7/15; ponderando pelas taxas iniciais, Pr(Q)=46/75. A parcela de placas com U e V é 13/75, e sua relação com o conjunto das placas que apresentaram Q é (13/75)/(46/75)=13/46.",
+      "B": "Deve ser aprovado o parecer que informa Pr(A|Q)=20/39 e Pr(U∧V|Q)=4/15. Com a origem fixada, obtêm-se Pr(Q|A)=5/6 e Pr(Q|B)=7/15; tomando a média simples desses valores, Pr(Q)=13/20. A parcela de placas com U e V é 13/75, e sua relação com o conjunto das placas que apresentaram Q é (13/75)/(13/20)=4/15.",
+      "C": "Deve ser aprovado o parecer que informa Pr(A|Q)=5/6 e Pr(U∧V|Q)=13/46. Com a origem fixada, obtêm-se Pr(Q|A)=5/6 e Pr(Q|B)=7/15; como Q ocorreu em uma placa da linha A, toma-se Pr(Q|A)=5/6 como a chance de a origem ser A. A parcela de placas com U e V é 13/75, e sua relação com o conjunto das placas que apresentaram Q é (13/75)/(46/75)=13/46.",
+      "D": "Deve ser aprovado o parecer que informa Pr(A|Q)=25/46 e Pr(U∧V|Q)=29/115. Com a origem fixada, obtêm-se Pr(Q|A)=5/6 e Pr(Q|B)=7/15; ponderando pelas taxas iniciais, Pr(Q)=46/75. Para os dois sinais, usa-se Pr(U)=29/75 e Pr(V)=2/5, de modo que Pr(U∧V)=58/375; sua relação com Q é (58/375)/(46/75)=29/115.",
+      "E": "Deve ser aprovado o parecer que informa Pr(A|Q)=25/46 e Pr(U∧V|Q)=5/23. Com a origem fixada, obtêm-se Pr(Q|A)=5/6 e Pr(Q|B)=7/15; ponderando pelas taxas iniciais, Pr(Q)=46/75. Para a parcela com U e V, considera-se a contribuição de A, igual a (2/5)(2/3)(1/2)=2/15, e sua relação com Q é (2/15)/(46/75)=5/23."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Teoria da informação",
+    "stem": "Em um arquivo de manuscritos, dois marcadores de degradação podem surgir em um item: F indica fragilização do suporte e P indica pigmentação instável. Em itens mantidos nas mesmas condições de conservação, Pr(F)=1/8 e Pr(P)=1/4, e a presença de um marcador não altera a probabilidade do outro. Um item segue para triagem quando apresenta F ou P. Somente entre os itens em triagem, examina-se uma etiqueta secundária com dois resultados: “dois marcadores”, quando F e P ocorrem juntos, e “exatamente um marcador”, nos demais casos de triagem. Para um resultado de probabilidade p, a medida de surpresa adotada é −log₂p bits. Qual parecer integrado deve ser escolhido?",
+    "alternatives": {
+      "A": "Entre os itens em triagem, a etiqueta “dois marcadores” tem probabilidade 1/11. Embora a etiqueta secundária tenha dois resultados possíveis e comporte 1 bit, a observação do resultado raro “dois marcadores” fornece 5 bits de informação, valor maior que 1 bit.",
+      "B": "Entre os itens em triagem, a etiqueta “dois marcadores” tem probabilidade 1/12. Embora a etiqueta secundária tenha dois resultados possíveis e comporte 1 bit, a observação do resultado raro “dois marcadores” fornece log₂(12) bits de informação, valor maior que 1 bit.",
+      "C": "Entre os itens em triagem, a etiqueta “dois marcadores” tem probabilidade 1/11. Como a etiqueta secundária tem dois resultados possíveis e comporta 1 bit, a observação do resultado raro “dois marcadores” fornece 1 bit de informação, valor que coincide com essa capacidade.",
+      "D": "Entre os itens em triagem, a etiqueta “dois marcadores” tem probabilidade 1/32. Embora a etiqueta secundária tenha dois resultados possíveis e comporte 1 bit, a observação do resultado raro “dois marcadores” fornece 5 bits de informação, valor maior que 1 bit.",
+      "E": "Entre os itens em triagem, a etiqueta “dois marcadores” tem probabilidade 1/11. Embora a etiqueta secundária tenha apenas dois resultados possíveis e comporte 1 bit, a observação do resultado raro “dois marcadores” fornece log₂(11) bits de informação, valor maior que 1 bit."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 2,
+      "P": 1
+    },
+    "composite_score": 2.35,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=2.10 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado fornece o parecer completo. O trecho c202 sustenta o uso da independência para combinar seletor e chave, c214 fornece a definição de capacidade como log₂ do número de estados, e c216 fornece a fórmula e o limite da entropia. É preciso combinar esses trechos com os dados do enunciado para construir probabilidades, capacidades e entropia. | R: É necessário ao menos determinar a distribuição do alerta antes de calcular sua entropia; depois, aplicar a definição de entropia à distribuição obtida. Contudo, a contagem dos seis estados do módulo e dos dois resultados do painel pode ser feita diretamente e de modo relativamente independente do cálculo probabilístico, de modo que nem todas as etapas formam uma cadeia estritamente indispensável e sequencial. | C: A resolução exige um racional curto, mas com aplicação de conceitos: usar independência e complemento/união para obter Pr(alerta)=1-(2/3)(1/2)=2/3; contar os estados dos dois sistemas; e aplicar a fórmula de entropia à distribuição binária não uniforme. Não é mera paráfrase, porém os conceitos necessários são poucos e explicitados ou motivados no material-fonte. | G: A resposta não pode ser obtida por recordação ou localização literal, pois requer aplicar probabilidades a eventos compostos e distinguir capacidade de informação de entropia. Ainda assim, trata-se de aplicação rotineira de definições e fórmulas, sem exigir análise ou síntese de alta ordem além de integrar os resultados no parecer. | P: Pelo menos dois distratores são elimináveis sem a resolução completa: o primeiro contradiz o fato de que a chave ligada, sozinha, já produz alerta com probabilidade 1/2; o segundo erra a contagem estrutural de 3 posições vezes 2 estados da chave; e o terceiro atribui ao painel binário capacidade log₂(6), embora ele tenha apenas dois resultados. O quarto também pode ser rejeitado ao reconhecer que dois resultados não equiprováveis não têm entropia de 1 bit, mas os três primeiros já tornam a pontuação 1."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Fundamentos da lógica matemática",
+    "stem": "Em uma estação de ensaio de elevadores, o ciclo C-73 já foi encerrado. Considere p: “o sensor da trava superior ficou ativo no ciclo C-73” e q: “o sensor da trava inferior ficou ativo no ciclo C-73”. Os registros ainda não foram consultados. Em paralelo, consta a frase “o sensor da trava superior ficou ativo no ciclo t”, em que t é apenas um marcador de ciclo sem valor atribuído. O protocolo assegura que, em C-73, pelo menos um dos dois sensores ficou ativo. Um parecer propõe trocar, na regra de validação desse ciclo, a exigência de que os sensores tenham apresentado o mesmo estado pela exigência de que ambos tenham ficado ativos. Qual parecer técnico integrado deve ser selecionado?",
+    "alternatives": {
+      "A": "Os enunciados p e q, por se referirem ao ciclo C-73 concluído, possuem valor lógico mesmo sem consulta aos registros; a frase com t também possui valor lógico, pois se refere a um marcador de ciclo. A coincidência de estado é formalizada por p↔q, enquanto a ativação dos dois sensores é p∧q. Sob a garantia p∨q, essas fórmulas assumem o mesmo valor nas situações operacionais admitidas, de modo que a troca é cabível nesse contexto, mas não expressa equivalência lógica fora dele.",
+      "B": "Os enunciados p e q, por se referirem ao ciclo C-73 concluído, possuem valor lógico mesmo sem consulta aos registros; a frase com t permanece dependente de um ciclo não fixado. A coincidência de estado é formalizada por p↔q, enquanto a ativação dos dois sensores é p∧q. Sob a garantia p∨q, essas fórmulas não assumem necessariamente o mesmo valor nas situações operacionais admitidas, de modo que a troca não é cabível nesse contexto, embora as fórmulas não sejam logicamente equivalentes fora dele.",
+      "C": "Os enunciados p e q, por se referirem ao ciclo C-73 concluído, possuem valor lógico mesmo sem consulta aos registros; a frase com t permanece dependente de um ciclo não fixado. A coincidência de estado é formalizada por p⊕q, enquanto a ativação dos dois sensores é p∧q. Sob a garantia p∨q, essas fórmulas não assumem o mesmo valor nas situações operacionais admitidas, de modo que a troca não é cabível nesse contexto.",
+      "D": "Os enunciados p e q, por se referirem ao ciclo C-73 concluído, possuem valor lógico mesmo sem consulta aos registros; a frase com t permanece dependente de um ciclo não fixado. A coincidência de estado é formalizada por p↔q, enquanto a ativação dos dois sensores é p∧q. Sob a garantia p∨q, essas fórmulas assumem o mesmo valor nas situações operacionais admitidas, de modo que a troca é cabível nesse contexto, mas não expressa equivalência lógica fora dele.",
+      "E": "Os enunciados p e q, por se referirem ao ciclo C-73 concluído, possuem valor lógico mesmo sem consulta aos registros; a frase com t permanece dependente de um ciclo não fixado. A coincidência de estado é formalizada por p↔q, enquanto a ativação dos dois sensores é p∧q. Sob a garantia p∨q, essas fórmulas assumem o mesmo valor nas situações operacionais admitidas, de modo que a troca é cabível e expressa equivalência lógica também fora desse contexto."
+    },
+    "correct_label": "D",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'single_correct_answer' não atendido; clareza pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: A expressão do consequente, P(x)⊕Q(y)∧R(x), não explicita a precedência entre ⊕ e ∧. Sob a leitura P(x)⊕(Q(y)∧R(x)), a resposta indicada é a negação correta; sob a leitura (P(x)⊕Q(y))∧R(x), o terceiro distrator passa a formalizar a falha. Há também sobreposição temática e estrutural relevante com questões já aceitas sobre negar políticas do tipo ∀x∃y."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Teoria dos conjuntos",
+    "stem": "Em um painel de comunicação, os cinco canais disponíveis são U={Aurora, Bruma, Cais, Duna, Estela}. Os canais sujeitos ao protocolo especial são D={Aurora, Cais}. Cada perfil de ativação é um subconjunto X de U, e o sistema associa a ele o perfil τ(X)=(U\\X)△D. A equipe reúne os pares de perfis na coleção K={{X,τ(X)}:X⊆U} e precisa selecionar um relatório integrado sobre o efeito de τ, a organização de K em relação a P(U) e a quantidade de blocos obtida. Qual relatório deve ser aprovado?",
+    "alternatives": {
+      "A": "Nos canais de D, a pertença em X é preservada por τ; nos canais de U\\D, ela é invertida. Assim, aplicar τ duas vezes recupera X, e não há perfil fixo, pois U\\D contém canais cuja pertença muda. Cada par de K possui dois perfis, os pares são não vazios e disjuntos dois a dois, e sua união é P(U); portanto, K constitui uma partição de P(U). Como |P(U)|=2⁵=32, K tem 16 blocos.",
+      "B": "Nos canais de D, a pertença em X é preservada por τ; nos canais de U\\D, ela é invertida. Assim, aplicar τ duas vezes recupera X, e não há perfil fixo, pois U\\D contém canais cuja pertença muda. Cada par de K possui dois perfis, os pares são não vazios e disjuntos dois a dois, e sua união é P(U); portanto, K constitui uma partição de P(U). Como |P(U)|=2⁵=32, K tem 32 blocos.",
+      "C": "Nos canais de D, a pertença em X é preservada por τ; nos canais de U\\D, ela é invertida. Assim, aplicar τ duas vezes recupera X, e não há perfil fixo, pois a recuperação de X após duas aplicações impede que um perfil possa ficar fixo. Cada par de K possui dois perfis, os pares são não vazios e disjuntos dois a dois, e sua união é P(U); portanto, K constitui uma partição de P(U). Como |P(U)|=2⁵=32, K tem 16 blocos.",
+      "D": "Nos canais de D, a pertença em X é preservada por τ; nos canais de U\\D, ela é invertida. Assim, aplicar τ duas vezes recupera X, e não há perfil fixo, pois U\\D contém canais cuja pertença muda. Cada par de K possui dois perfis, os pares são não vazios, mas alguns pares compartilham perfis; sua união é P(U), de modo que K não constitui uma partição de P(U). Como |P(U)|=2⁵=32, K tem 16 blocos.",
+      "E": "Nos canais de D, a pertença em X é invertida por τ; nos canais de U\\D, ela é preservada. Assim, aplicar τ duas vezes recupera X, e não há perfil fixo, pois U\\D contém canais cuja pertença muda. Cada par de K possui dois perfis, os pares são não vazios e disjuntos dois a dois, e sua união é P(U); portanto, K constitui uma partição de P(U). Como |P(U)|=2⁵=32, K tem 16 blocos."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Equivalências e inferências lógicas",
+    "stem": "Em uma central de redundância de uma rede ferroviária, p representa “o controle óptico de estabilidade está ativo”, q representa “o controle inercial de estabilidade está ativo” e e representa “o modo de emergência recebeu autorização”. A política inicialmente proposta exige (p↔q)→e. Contudo, o registro operacional contém a regra ¬e→¬p∨¬q, sem parênteses. Na auditoria do ciclo em exame, constam como fatos independentes p∨q e ¬e. Qual parecer integrado deve ser aprovado sobre a relação entre a regra registrada e a política inicialmente proposta, bem como sobre os controles naquele ciclo?",
+    "alternatives": {
+      "A": "A regra registrada sustenta a política inicialmente proposta nas condições auditadas, pois, sob p∨q, a exigência de coincidência entre p e q tem o mesmo efeito que a ativação conjunta dos dois controles. Essa coincidência depende do fato p∨q; sem ele, as duas formulações podem divergir. Como ¬e ocorreu e p∨q também consta na auditoria, exatamente um dos controles p e q estava ativo.",
+      "B": "A regra registrada sustenta a política inicialmente proposta nas condições auditadas, pois, sob p∨q, a exigência de coincidência entre p e q tem o mesmo efeito que a ativação conjunta dos dois controles. Essa coincidência depende do fato p∨q; sem ele, as duas formulações podem divergir. Como ¬e ocorreu e p∨q também consta na auditoria, sabe-se que a ativação conjunta foi excluída, mas não se pode determinar se um ou os dois controles estavam ativos.",
+      "C": "A regra registrada sustenta a política inicialmente proposta mesmo sem a condição p∨q, pois a exigência de coincidência entre p e q tem o mesmo efeito que a ativação conjunta dos dois controles. Como ¬e ocorreu e p∨q também consta na auditoria, exatamente um dos controles p e q estava ativo.",
+      "D": "A regra registrada sustenta a política inicialmente proposta nas condições auditadas, pois, sob p∨q, a exigência de coincidência entre p e q tem o mesmo efeito que a ativação conjunta dos dois controles. A regra registrada equivale diretamente a e→p∧q, e essa coincidência depende do fato p∨q; sem ele, as duas formulações podem divergir. Como ¬e ocorreu e p∨q também consta na auditoria, exatamente um dos controles p e q estava ativo.",
+      "E": "A regra registrada sustenta a política inicialmente proposta nas condições auditadas, pois, sob p∨q, a expressão ¬e→¬p∨¬q deve ser entendida como (¬e→¬p)∨¬q e, assim, indica a exclusão da ativação conjunta dos dois controles. Essa coincidência depende do fato p∨q; sem ele, as duas formulações podem divergir. Como ¬e ocorreu e p∨q também consta na auditoria, exatamente um dos controles p e q estava ativo."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Lógica de predicados e quantificadores",
+    "stem": "Em um entreposto portuário, U é o universo operacional delimitado dos recipientes recebidos no turno, e M⊆U reúne os recipientes submetidos a monitoramento reforçado. Para x∈U, E(x) significa que x porta selo eletrônico válido, e R(x) significa que x consta no registro de rastreabilidade. Quantificadores sem domínio indicado percorrem U. A norma estabelece que cada recipiente sob monitoramento reforçado que porta selo válido deve constar no registro. Há turnos em que M pode ser vazio.\n\nUm parecer de conformidade deve reunir, de modo compatível, a formalização da norma no universo U, a condição que comprova uma violação e o registro dual obtido a partir da matriz proposicional da norma após eliminar a implicação. Qual parecer deve ser aprovado?",
+    "alternatives": {
+      "A": "A norma fica expressa por (∀x)((M(x)∧E(x))→R(x)), cuja matriz equivalente é ¬M(x)∨¬E(x)∨R(x). Uma violação é certificada por (∃x)(M(x)∧E(x)∧¬R(x)). O registro dual da matriz normalizada é ¬M(x)∧¬E(x)∧R(x), e não constitui a condição de falha da norma. Se M=∅, a norma é verdadeira, enquanto a certificação existencial de violação é falsa.",
+      "B": "A norma fica expressa por (∀x)((M(x)∧E(x))→R(x)), cuja matriz equivalente é ¬M(x)∨¬E(x)∨R(x). Uma violação é certificada por (∃x)(M(x)∧E(x)∧¬R(x)). O registro dual da matriz normalizada é M(x)∧E(x)∧¬R(x), e constitui a condição de falha da norma. Se M=∅, a norma é verdadeira, enquanto a certificação existencial de violação é falsa.",
+      "C": "A norma fica expressa por (∀x)((M(x)∧E(x))→R(x)), cuja matriz equivalente é ¬M(x)∨¬E(x)∨R(x). Uma violação é certificada por (∃x)(E(x)∧¬R(x)). O registro dual da matriz normalizada é ¬M(x)∧¬E(x)∧R(x), e não constitui a condição de falha da norma. Se M=∅, a norma é verdadeira, enquanto essa certificação existencial pode ocorrer se houver recipiente com selo válido fora do registro.",
+      "D": "A norma fica expressa por (∀x)((M(x)∧E(x))→R(x)), cuja matriz equivalente é ¬M(x)∨¬E(x)∨R(x). Uma violação é certificada por (∀x)(M(x)→(E(x)∧¬R(x))). O registro dual da matriz normalizada é ¬M(x)∧¬E(x)∧R(x), e não constitui a condição de falha da norma. Se M=∅, a norma é verdadeira, enquanto a certificação universal apresentada é verdadeira.",
+      "E": "A norma fica expressa por (∀x)((M(x)∧E(x))→R(x)), cuja matriz equivalente é ¬M(x)∨E(x)∨R(x). Uma violação é certificada por (∃x)(M(x)∧E(x)∧¬R(x)). O registro dual da matriz apresentada é ¬M(x)∧E(x)∧R(x), e não constitui a condição de falha da norma. Se M=∅, a norma é verdadeira, enquanto a certificação existencial de violação é falsa."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'no_length_imbalance' não atendido. Observações do avaliador: A alternativa correta é logicamente correta e única. Contudo, ela é visivelmente mais curta que todos os distratores, pois os quatro distratores incluem ainda um parágrafo adicional iniciado por “difere por:”, ausente na correta. Isso cria desequilíbrio de extensão e detalhe. Há também sobreposição temática relevante com questões aceitas sobre negação de políticas quantificadas, contramodelos e casos de domínio/conjunto vazio, especialmente a questão dos sensores regulamentados e a de U↔C."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Relações binárias",
+    "stem": "Em uma oficina de manutenção predial, os pedidos em análise são P={Ícaro,Nilo,Sora,Turi}, e as etiquetas técnicas disponíveis são E={elétrica,pressão}. Os registros encaminhados são R={(Ícaro,elétrica),(Nilo,elétrica),(Nilo,pressão),(Sora,pressão)}. A coordenação forma H=R⁻¹∘R e pretende usar, sobre P, a menor relação reflexiva e transitiva que contém H como critério de precedência entre pedidos. Qual parecer integrado deve ser aprovado?",
+    "alternatives": {
+      "A": "D) Dom(R)={Ícaro,Nilo,Sora} e H={(Ícaro,Ícaro),(Ícaro,Nilo),(Nilo,Ícaro),(Nilo,Nilo),(Nilo,Sora),(Sora,Nilo),(Sora,Sora)}. A relação reflexiva e transitiva obtida sobre P é ({Ícaro,Nilo,Sora}×{Ícaro,Nilo,Sora})∪{(Turi,Turi)}: além dos autocontatos já presentes em H, ela inclui (Turi,Turi), (Ícaro,Sora) e (Sora,Ícaro). Ela constitui uma ordem, pois é reflexiva e transitiva sobre P.",
+      "B": "A) Dom(R)={Ícaro,Nilo,Sora} e H={(Ícaro,Ícaro),(Ícaro,Nilo),(Nilo,Ícaro),(Nilo,Nilo),(Nilo,Sora),(Sora,Nilo),(Sora,Sora)}. A relação reflexiva e transitiva obtida sobre P é ({Ícaro,Nilo,Sora}×{Ícaro,Nilo,Sora})∪{(Turi,Turi)}: além dos autocontatos já presentes em H, ela inclui (Turi,Turi), (Ícaro,Sora) e (Sora,Ícaro). Embora seja reflexiva e transitiva, ela não constitui uma ordem, pois preserva, por exemplo, (Ícaro,Nilo) e (Nilo,Ícaro), com Ícaro≠Nilo.",
+      "C": "B) Dom(R)={Ícaro,Nilo,Sora} e H={(Ícaro,Ícaro),(Ícaro,Nilo),(Nilo,Ícaro),(Nilo,Sora),(Sora,Nilo),(Sora,Sora)}. A relação reflexiva e transitiva obtida sobre P é ({Ícaro,Nilo,Sora}×{Ícaro,Nilo,Sora})∪{(Turi,Turi)}: além dos autocontatos já presentes em H, ela inclui (Turi,Turi), (Nilo,Nilo), (Ícaro,Sora) e (Sora,Ícaro). Embora seja reflexiva e transitiva, ela não constitui uma ordem, pois preserva, por exemplo, (Ícaro,Nilo) e (Nilo,Ícaro), com Ícaro≠Nilo.",
+      "D": "E) Dom(R)={Ícaro,Nilo,Sora,Turi} e H={(Ícaro,Ícaro),(Ícaro,Nilo),(Nilo,Ícaro),(Nilo,Nilo),(Nilo,Sora),(Sora,Nilo),(Sora,Sora)}. A relação reflexiva e transitiva obtida sobre P é ({Ícaro,Nilo,Sora}×{Ícaro,Nilo,Sora})∪{(Turi,Turi)}: além dos autocontatos já presentes em H, ela inclui (Turi,Turi), (Ícaro,Sora) e (Sora,Ícaro). Embora seja reflexiva e transitiva, ela não constitui uma ordem, pois preserva, por exemplo, (Ícaro,Nilo) e (Nilo,Ícaro), com Ícaro≠Nilo.",
+      "E": "C) Dom(R)={Ícaro,Nilo,Sora} e H={(Ícaro,Ícaro),(Ícaro,Nilo),(Nilo,Ícaro),(Nilo,Nilo),(Nilo,Sora),(Sora,Nilo),(Sora,Sora)}. A relação reflexiva e transitiva obtida sobre P é H∪{(Turi,Turi)}: além dos autocontatos já presentes em H, ela inclui apenas (Turi,Turi), sem acrescentar (Ícaro,Sora) nem (Sora,Ícaro). Embora seja reflexiva e transitiva, ela não constitui uma ordem, pois preserva, por exemplo, (Ícaro,Nilo) e (Nilo,Ícaro), com Ícaro≠Nilo."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'single_correct_answer' não atendido; critério de conformidade 'no_length_imbalance' não atendido; clareza pontuou 1, abaixo do mínimo exigido (2); diversidade semântica pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: Além de B, a alternativa E também está correta: ela descreve exatamente S* como os pares internos dos dois componentes conexos, sem (Lúmen,Lúmen), e afirma corretamente que a inclusão de I_A acrescenta a classe isolada {Lúmen}. A alternativa B também se destaca das demais por listar explicitamente todos os pares de S*, sendo consideravelmente mais longa e detalhada."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Propriedades e fechos de relações",
+    "stem": "Em uma arquitetura de retransmissão, os módulos são A={Átrio, Bruma, Cais, Domo, Estação, Farol}. Os enlaces diretos registrados formam a relação R={(Átrio,Bruma),(Bruma,Cais),(Cais,Domo),(Domo,Cais),(Estação,Átrio)}. Farol não participa de enlace direto.\n\nA política operacional autoriza a permanência de uma mensagem no módulo em que ela já se encontra e autoriza retransmissões obtidas pela concatenação de enlaces. A equipe deve selecionar, entre relatórios concorrentes, aquele que apresenta a relação final exigida pela política, verifica reflexividade e transitividade e atende ao critério de minimalidade por inclusão, sem introduzir autorização entre módulos sem trajetória dirigida. Qual relatório deve ser selecionado?",
+    "alternatives": {
+      "A": "O relatório que adota P₄={(Átrio,Átrio),(Átrio,Bruma),(Átrio,Cais),(Átrio,Domo),(Bruma,Bruma),(Bruma,Cais),(Bruma,Domo),(Cais,Cais),(Cais,Domo),(Domo,Domo),(Domo,Cais),(Estação,Estação),(Estação,Átrio),(Estação,Bruma),(Estação,Cais),(Farol,Farol)}. Essa relação contém R, é reflexiva em A e transitiva. Além disso, ela satisfaz a minimalidade por inclusão: se T contém R e é reflexiva e transitiva em A, então P₄⊆T. Os laços inseridos autorizam permanência, inclusive em Farol, e os pares não diagonais listados resultam das retransmissões sucessivas registradas.",
+      "B": "O relatório que adota P={(Átrio,Átrio),(Átrio,Bruma),(Átrio,Cais),(Átrio,Domo),(Bruma,Bruma),(Bruma,Cais),(Bruma,Domo),(Cais,Cais),(Cais,Domo),(Domo,Domo),(Domo,Cais),(Estação,Estação),(Estação,Átrio),(Estação,Bruma),(Estação,Cais),(Estação,Domo),(Farol,Farol)}. Essa relação contém R, é reflexiva em A e transitiva. Além disso, ela satisfaz a minimalidade por inclusão: se T contém R e é reflexiva e transitiva em A, então P⊆T. Os laços inseridos autorizam permanência, inclusive em Farol, e não geram conexões entre módulos distintos; os pares não diagonais de P decorrem das trajetórias dirigidas registradas.",
+      "C": "O relatório que adota P₂={(Átrio,Bruma),(Átrio,Cais),(Átrio,Domo),(Bruma,Cais),(Bruma,Domo),(Cais,Cais),(Cais,Domo),(Domo,Domo),(Domo,Cais),(Estação,Átrio),(Estação,Bruma),(Estação,Cais),(Estação,Domo)}. Essa relação contém R, é reflexiva em A e transitiva. Além disso, ela satisfaz a minimalidade por inclusão: se T contém R e é reflexiva e transitiva em A, então P₂⊆T. Os pares diagonais presentes decorrem das retransmissões circulares entre Cais e Domo, enquanto os demais pares decorrem das trajetórias dirigidas registradas.",
+      "D": "O relatório que adota P₃={(Átrio,Átrio),(Átrio,Bruma),(Átrio,Cais),(Átrio,Domo),(Bruma,Bruma),(Bruma,Cais),(Bruma,Domo),(Cais,Cais),(Cais,Domo),(Domo,Domo),(Domo,Cais),(Estação,Estação),(Estação,Átrio),(Estação,Bruma),(Estação,Cais),(Estação,Domo),(Estação,Farol),(Farol,Farol)}. Essa relação contém R, é reflexiva em A e transitiva. Além disso, ela satisfaz a minimalidade por inclusão, pois a permanência em Farol permite que Estação o alcance sem que seja necessário registrar um enlace adicional. Os pares não diagonais decorrem das trajetórias dirigidas registradas ou da permanência autorizada.",
+      "E": "O relatório que adota P₁={(Átrio,Átrio),(Átrio,Bruma),(Bruma,Bruma),(Bruma,Cais),(Cais,Cais),(Cais,Domo),(Domo,Domo),(Domo,Cais),(Estação,Estação),(Estação,Átrio),(Farol,Farol)}. Essa relação contém R, é reflexiva em A e é transitiva, pois os laços inseridos autorizam permanência e preservam as retransmissões registradas. Além disso, ela satisfaz a minimalidade por inclusão, já que acrescenta apenas as permanências exigidas pela política e não introduz autorização entre módulos sem enlace direto."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.4,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Funções",
+    "stem": "Em um arquivo de preservação sonora, as gravações recém-recebidas passam por um posto de classificação e, em seguida, por uma área de guarda. Os encaminhamentos registrados são F:A→B e G:B→C, conforme as tabelas.\n\nA = {Orvalho, Pórtico, Quartzo, Riacho, Safira}\n\nB = {selo-cedro, selo-violeta, selo-oliva, selo-coral, selo-azul}\n\nC = {Cofre-A, Cofre-B, Cofre-C}\n\n| gravação em A | encaminhamento F |\n|---|---|\n| Orvalho | selo-cedro |\n| Pórtico | selo-violeta |\n| Quartzo | selo-oliva |\n| Riacho | selo-coral |\n| Safira | selo-azul |\n\n| selo em B | encaminhamento G |\n|---|---|\n| selo-cedro | Cofre-A |\n| selo-violeta | Cofre-A |\n| selo-oliva | Cofre-B |\n| selo-coral | Cofre-A |\n| selo-azul | Cofre-C |\n\nPara a seleção X={Orvalho, Quartzo}, a coordenação pretende aprovar um parecer sobre o fluxo direto K=G∘F, sobre as gravações que chegam às áreas alcançadas por X e sobre a viabilidade de devolver uma gravação a partir de seu cofre. Qual parecer deve ser aprovado?",
+    "alternatives": {
+      "A": "O parecer que registra K(Orvalho)=Cofre-A, K(Pórtico)=Cofre-A, K(Quartzo)=Cofre-B, K(Riacho)=Cofre-A e K(Safira)=Cofre-C. Para X, as áreas alcançadas são U={Cofre-A, Cofre-B, Cofre-C}; no domínio A, as gravações que chegam a U são {Orvalho, Pórtico, Quartzo, Riacho, Safira}, portanto esse conjunto não coincide com X. Após restringir o fluxo a X, a devolução associa Cofre-A a Orvalho e Cofre-B a Quartzo. No fluxo sobre A, Cofre-A está ligado a Orvalho, Pórtico e Riacho, de modo que a devolução a partir desse cofre não determina uma origem única.",
+      "B": "O parecer que registra K(Orvalho)=Cofre-A, K(Pórtico)=Cofre-A, K(Quartzo)=Cofre-A, K(Riacho)=Cofre-A e K(Safira)=Cofre-C. Para X, as áreas alcançadas são U={Cofre-A}; no domínio A, as gravações que chegam a U são {Orvalho, Pórtico, Quartzo, Riacho}, portanto esse conjunto não coincide com X. Após restringir o fluxo a X, Cofre-A fica associado tanto a Orvalho quanto a Quartzo, de modo que a devolução não determina uma origem única nem na seleção. No fluxo sobre A, Cofre-A também está ligado a Orvalho, Pórtico, Quartzo e Riacho.",
+      "C": "O parecer que registra K(Orvalho)=Cofre-A, K(Pórtico)=Cofre-A, K(Quartzo)=Cofre-B, K(Riacho)=Cofre-A e K(Safira)=Cofre-C. Para X, as áreas alcançadas são U={Cofre-A, Cofre-B}; no domínio A, as gravações que chegam a U são {Orvalho, Pórtico, Quartzo, Riacho}, portanto esse conjunto não coincide com X. Após restringir o fluxo a X, a devolução não pode associar Cofre-A somente a Orvalho, pois Pórtico e Riacho também chegam a Cofre-A no fluxo sobre A. Assim, a colisão no fluxo completo impede a devolução mesmo após a seleção.",
+      "D": "O parecer que registra K(Orvalho)=Cofre-A, K(Pórtico)=Cofre-A, K(Quartzo)=Cofre-B, K(Riacho)=Cofre-A e K(Safira)=Cofre-C. Para X, as áreas alcançadas são U={Cofre-A, Cofre-B}; no domínio A, as gravações que chegam a U são {Orvalho, Pórtico, Quartzo, Riacho}, portanto esse conjunto não coincide com X. Após restringir o fluxo a X, a devolução associa Cofre-A a Orvalho e Cofre-B a Quartzo. Como essa devolução funciona na seleção, ela também permite, no fluxo sobre A, identificar uma origem única para Cofre-A.",
+      "E": "O parecer que registra K(Orvalho)=Cofre-A, K(Pórtico)=Cofre-A, K(Quartzo)=Cofre-B, K(Riacho)=Cofre-A e K(Safira)=Cofre-C. Para X, as áreas alcançadas são U={Cofre-A, Cofre-B}; no domínio A, as gravações que chegam a U são {Orvalho, Pórtico, Quartzo, Riacho}, portanto esse conjunto não coincide com X. Após restringir o fluxo a X, a devolução associa Cofre-A a Orvalho e Cofre-B a Quartzo. No fluxo sobre A, Cofre-A está ligado a Orvalho, Pórtico e Riacho, de modo que a devolução a partir desse cofre não determina uma origem única."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Sequências finitas e relações n-árias",
+    "stem": "Em um programa de navegação subaquática, cada percurso é arquivado como um código formado por pares (posição de leitura, valor obtido); a posição integra o código. Os códigos disponíveis são:\n\nα = {(4,41),(5,58),(6,73)}\nβ = {(5,41),(6,58),(7,73)}\nγ = {(4,41),(5,58),(6,73)}\nδ = {(4,62),(5,87)}\n\nA relação E de expedições usa a ordem (veículo, baía, percurso, selo):\n\nE = {(Aqualis, Baía-Índigo, α, C-λ), (Batim, Baía-Ônix, β, C-λ), (Coral, Baía-Índigo, γ, C-λ), (Dorso, Baía-Jade, α, C-μ), (Éter, Baía-Cobre, δ, C-μ)}.\n\nA relação I de inspeções usa a ordem (percurso, selo, parecer, núcleo):\n\nI = {(γ, C-λ, conforme, Núcleo-Delta), (α, C-μ, retido, Núcleo-Sigma), (β, C-μ, conforme, Núcleo-Delta), (δ, C-μ, retido, Núcleo-Sigma)}.\n\nO sistema combina um registro de E com um de I quando percurso e selo coincidem simultaneamente. Cada combinação gera um registro na ordem (veículo, baía, percurso, selo, parecer, núcleo), sem duplicar percurso ou selo. Ao fim, o painel arquiva apenas os campos na ordem (núcleo, baía, parecer); registros finais coincidentes ocupam uma única ocorrência.\n\nQual relatório deve ser aprovado, informando a aridade do arquivo final, suas triplas e os domínios de suas posições?",
+    "alternatives": {
+      "A": "O arquivo final tem aridade 3 e é {(Núcleo-Delta, Baía-Índigo, conforme), (Núcleo-Sigma, Baía-Jade, retido), (Núcleo-Sigma, Baía-Cobre, retido)}. Seus domínios, na ordem das posições, são {Núcleo-Delta, Núcleo-Sigma}, {Baía-Índigo, Baía-Jade, Baía-Cobre} e {conforme, retido}.",
+      "B": "O arquivo final tem aridade 3 e é {(Núcleo-Sigma, Baía-Índigo, retido), (Núcleo-Delta, Baía-Ônix, conforme), (Núcleo-Delta, Baía-Índigo, conforme), (Núcleo-Sigma, Baía-Jade, retido), (Núcleo-Sigma, Baía-Cobre, retido)}. Seus domínios, na ordem das posições, são {Núcleo-Delta, Núcleo-Sigma}, {Baía-Índigo, Baía-Ônix, Baía-Jade, Baía-Cobre} e {conforme, retido}.",
+      "C": "O arquivo final tem aridade 3 e é {(Núcleo-Delta, Baía-Índigo, conforme), (Núcleo-Delta, Baía-Ônix, conforme), (Núcleo-Sigma, Baía-Jade, retido), (Núcleo-Sigma, Baía-Cobre, retido)}. Seus domínios, na ordem das posições, são {Núcleo-Delta, Núcleo-Sigma}, {Baía-Índigo, Baía-Ônix, Baía-Jade, Baía-Cobre} e {conforme, retido}.",
+      "D": "O arquivo final tem aridade 3 e é {(Baía-Índigo, Núcleo-Delta, conforme), (Baía-Jade, Núcleo-Sigma, retido), (Baía-Cobre, Núcleo-Sigma, retido)}. Seus domínios, na ordem das posições, são {Baía-Índigo, Baía-Jade, Baía-Cobre}, {Núcleo-Delta, Núcleo-Sigma} e {conforme, retido}.",
+      "E": "O arquivo final tem aridade 3 e contém quatro ocorrências: (Núcleo-Delta, Baía-Índigo, conforme), (Núcleo-Delta, Baía-Índigo, conforme), (Núcleo-Sigma, Baía-Jade, retido) e (Núcleo-Sigma, Baía-Cobre, retido). Seus domínios, na ordem das posições, são {Núcleo-Delta, Núcleo-Sigma}, {Baía-Índigo, Baía-Jade, Baía-Cobre} e {conforme, retido}."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Somatórias, produtórias e séries",
+    "stem": "Em um protocolo fictício de estabilidade entre estágios, para cada inteiro n suficientemente grande a equipe acompanha o índice multiplicativo\n\nQₙ = ∏₍k=2 até n−1₎ exp(k ln k−2ᵏ).\n\nQual parecer matemático deve ser selecionado para avaliar o comportamento de Qₙ quando n cresce?",
+    "alternatives": {
+      "A": "O parecer que afirma que\n\nn²/2·ln n−n²/4−n ln n+17/4−2ⁿ ≤ ln Qₙ ≤ n²/2·ln n−n²/4−2 ln 2+5−2ⁿ.\n\nConsequentemente, ln Qₙ=−2ⁿ+O(n² ln n) e Qₙ→0.",
+      "B": "O parecer que afirma que\n\nn²/2·ln n−n²/4−n ln n+15/4−2ⁿ ≤ ln Qₙ ≤ n²/2·ln n−n²/4−2 ln 2+4−2ⁿ.\n\nConsequentemente, ln Qₙ=−2ⁿ+O(n² ln n) e Qₙ→0.",
+      "C": "O parecer que afirma que\n\nn²/2·ln n−n²/4−n ln n+17/4−2ⁿ ≤ ln Qₙ ≤ n²/2·ln n−n²/4−2 ln 2+5−2ⁿ.\n\nConsequentemente, como os fatores com k ln k crescem ao longo do produto, ln Qₙ→+∞ e Qₙ→+∞.",
+      "D": "O parecer que afirma que\n\nn²/2·ln n−n²/4−n ln n+17/4−2ⁿ ≤ ln Qₙ ≤ n²/2·ln n−n²/4−2 ln 2+4−2ⁿ.\n\nConsequentemente, ln Qₙ=−2ⁿ+O(n² ln n) e Qₙ→0.",
+      "E": "O parecer que afirma que\n\nn²/2·ln n−n²/4+17/4−2ⁿ ≤ ln Qₙ ≤ n²/2·ln n−n²/4−2 ln 2+5−2ⁿ.\n\nConsequentemente, ln Qₙ=−2ⁿ+O(n² ln n) e Qₙ→0."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Sequências infinitas e recorrências",
+    "stem": "Considere a sequência (y_n) dada por y_0=8 e y_n=y_(n−1)+⌊y_(n−1)/4⌋ para n≥1. Qual afirmação global deve ser assinalada após analisar limites obtidos por recorrências auxiliares e sua propagação ao longo dos índices?",
+    "alternatives": {
+      "A": "1+7(5/4)^n≤y_n≤8(5/4)^n, para cada n≥0.",
+      "B": "4+4(5/4)^n≤y_n=8(5/4)^n, para cada n≥0.",
+      "C": "4+4(4/3)^n≤y_n≤8(5/4)^n, para cada n≥0.",
+      "D": "8(5/4)^n≤y_n≤8(5/4)^n, para cada n≥0.",
+      "E": "4+4(5/4)^n≤y_n≤8(5/4)^n, para cada n≥0."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 2,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Análise combinatória e contagem",
+    "stem": "Em uma exposição, 12 artefatos distintos serão distribuídos entre três vitrines identificadas, com capacidades 5, 4 e 3. A ordem dos artefatos dentro de cada vitrine não altera a distribuição. Entre os artefatos há três protótipos distintos, que devem ficar em vitrines diferentes entre si. Qual expressão calcula o número de distribuições permitidas?",
+    "alternatives": {
+      "A": "12!/(5!4!3!) − 3[10!/(3!4!3!) + 10!/(5!2!3!) + 10!/(5!4!1!)] + 2[9!/(2!4!3!) + 9!/(5!1!3!) + 9!/(5!4!0!)]",
+      "B": "12!/(5!4!3!) − [10!/(3!4!3!) + 10!/(5!2!3!) + 10!/(5!4!1!)] + 2[9!/(2!4!3!) + 9!/(5!1!3!) + 9!/(5!4!0!)]",
+      "C": "12!/(5!4!3!) − 3[10!/(3!4!3!) + 10!/(5!2!3!) + 10!/(5!4!1!)] + 3[9!/(2!4!3!) + 9!/(5!1!3!) + 9!/(5!4!0!)]",
+      "D": "12!/(5!4!3!) − 3[10!/(3!4!3!) + 10!/(5!2!3!) + 10!/(5!4!1!)] + [9!/(2!4!3!) + 9!/(5!1!3!) + 9!/(5!4!0!)]",
+      "E": "12!/(5!4!3!) − 3[10!/(3!4!3!) + 10!/(5!2!3!) + 10!/(5!4!1!)] + 2/3![9!/(2!4!3!) + 9!/(5!1!3!) + 9!/(5!4!0!)]"
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 3,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.8,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Fundamentos de teoria dos grafos",
+    "stem": "Uma rede simples e conexa de monitoramento possui nove estações, separadas em dois grupos disjuntos: o primeiro tem quatro estações, com graus 4, 4, 3 e 3; o segundo tem cinco estações, com graus 3, 3, 3, 3 e 2. Cada ligação une estações de grupos distintos. Estações ligadas devem operar em canais diferentes. Para um relatório técnico, qual conclusão conjunta sobre o número mínimo de canais e sobre a possibilidade de certificar um desenho da rede sem cruzamentos é tecnicamente justificável?",
+    "alternatives": {
+      "A": "O número mínimo de canais é 2, pois as ligações ocorrem entre os dois grupos e há ligação; os 14 enlaces atingem o teto compatível com uma rede sem cruzamentos e sem triângulos de nove estações, mas essa coincidência não certifica que tal desenho exista.",
+      "B": "O número mínimo de canais é 3, pois a ausência de triângulos permite usar três canais; os 14 enlaces atingem o teto compatível com uma rede sem cruzamentos e sem triângulos de nove estações, mas essa coincidência não certifica que tal desenho exista.",
+      "C": "O número mínimo de canais é 2, pois as ligações ocorrem entre os dois grupos e há ligação; os 14 enlaces atingem o teto compatível com uma rede sem cruzamentos e sem triângulos de nove estações, e essa igualdade certifica que tal desenho existe.",
+      "D": "O número mínimo de canais é 2, pois as ligações ocorrem entre os dois grupos e há ligação; os 12 enlaces ficam abaixo do teto compatível com uma rede sem cruzamentos e sem triângulos de nove estações, mas essa condição não certifica que tal desenho exista.",
+      "E": "O número mínimo de canais é 2, pois as ligações ocorrem entre os dois grupos e há ligação; os 14 enlaces atingem o teto compatível com uma rede sem cruzamentos e sem triângulos de nove estações, e essa igualdade prova que tal desenho não existe."
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Sequências infinitas e recorrências",
+    "stem": "Em um sistema de monitoramento, a contagem acumulada ao fim do ciclo n é y_n, com y_0=10 e y_n=y_(n−1)+⌊y_(n−1)/2⌋ para n≥1. As medições realizadas somente nos ciclos pares são dadas por s_n=y_(2n). Para comparação, considere b_0=0, b_1=1 e b_n=b_(n−1)+2b_(n−2) para n≥2. Após analisar o crescimento das duas sequências, qual é o comportamento de s_n/b_n quando n tende ao infinito?",
+    "alternatives": {
+      "A": "A razão s_n/b_n tende a uma constante positiva.",
+      "B": "A razão s_n/b_n diverge para +∞.",
+      "C": "A razão s_n/b_n tende a 0.",
+      "D": "A razão s_n/b_n permanece limitada.",
+      "E": "A razão s_n/b_n não converge e alterna entre dois valores positivos."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 3,
+      "G": 3,
+      "P": 3
+    },
+    "composite_score": 3.0,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Análise combinatória e contagem",
+    "stem": "Na arquitetura de um protocolo técnico, 13 módulos distintos devem ser alocados em três fases identificadas, com capacidades 5, 4 e 4, respectivamente. Cada módulo pertence a uma única fase. Três módulos críticos distintos devem ocupar fases diferentes entre si. A ordem dos módulos em uma fase não importa, exceto na primeira fase: após a alocação, nela é escolhida uma dupla de ativação cujas posições de primeiro e segundo módulo são distintas. A dupla pode incluir o módulo crítico alocado na primeira fase. Qual expressão fornece a quantidade de configurações possíveis do protocolo?",
+    "alternatives": {
+      "A": "3! × 10!/(4!3!3!) × (5×4)",
+      "B": "3! × 10!/(5!4!4!) × (5×4)",
+      "C": "3! × 10!/(4!3!3!) × (5!/(2!3!))",
+      "D": "3! × 10!/(4!3!3!) × 5!",
+      "E": "10!/(4!3!3!) × (5×4)"
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Questão reprovada: critério de conformidade 'single_correct_answer' não atendido. Observações do avaliador: A contagem correta é 924, que foi apresentado como distrator. Por inclusão-exclusão: 9!/(3!)^3=1680; cada violação individual tem 360 alocações; cada interseção de duas violações tem 120; e a interseção tripla tem 36. Logo, 1680-3·360+3·120-36=924, e não 744."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Métodos de prova de teoremas",
+    "stem": "Em um protocolo de codificação binária, um ajuste r só pode assumir os valores de {0,1}. A propriedade exigida é: para cada inteiro n, se n² é par, então há exatamente um ajuste r∈{0,1} para o qual n+r é par. Após analisar os esboços apresentados, qual abordagem sustenta essa propriedade sem lacunas lógicas?",
+    "alternatives": {
+      "A": "Fixe um inteiro n arbitrário e suponha n² par. Se n fosse ímpar, n=2k+1 para algum inteiro k, e n²=2(2k²+2k)+1 seria ímpar, em conflito com a hipótese; portanto, n é ímpar. O valor r=1 pertence a {0,1} e produz n+1 par. Para a unicidade, considere um r arbitrário de {0,1} tal que n+r seja par: r não pode ser 0, pois n+0 é ímpar; assim, r=1.",
+      "B": "Fixe um inteiro n arbitrário e suponha n² par. Se n fosse ímpar, n=2k+1 para algum inteiro k, e n²=2(2k²+2k)+1 seria ímpar, em conflito com a hipótese; portanto, n é par. O valor r=0 pertence a {0,1} e produz n+0 par. Como foi exibido um ajuste que satisfaz a condição, conclui-se que há exatamente um ajuste em {0,1}.",
+      "C": "Fixe um inteiro n arbitrário e suponha n² par. Se n fosse ímpar, n=2k+1 para algum inteiro k, e n²=2(2k²+2k)+1 seria ímpar, em conflito com a hipótese; portanto, n é par. Para a unicidade, considere um r arbitrário de {0,1} tal que n+r seja par: r não pode ser 1, pois n+1 é ímpar; assim, r=0. Como todo ajuste que satisfaz a condição deve ser 0, há exatamente um ajuste.",
+      "D": "Fixe um inteiro n arbitrário e suponha n² par. Como n par implica n² par, conclui-se que n é par. O valor r=0 pertence a {0,1} e produz n+0 par. Para a unicidade, considere um r arbitrário de {0,1} tal que n+r seja par: r não pode ser 1, pois n+1 é ímpar; assim, r=0.",
+      "E": "Fixe um inteiro n arbitrário e suponha n² par. Se n fosse ímpar, n=2k+1 para algum inteiro k, e n²=2(2k²+2k)+1 seria ímpar, em conflito com a hipótese; portanto, n é par. O valor r=0 pertence a {0,1} e produz n+0 par. Para a unicidade, considere um r arbitrário de {0,1} tal que n+r seja par: r não pode ser 1, pois n+1 é ímpar; assim, r=0."
+    },
+    "correct_label": "E",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 2,
+    "failed_criteria_history": [
+      "Pontuação composta D=2.10 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado sustenta todo o parecer. O trecho sobre vacuidade explica por que P(n)→Q(n) vale quando P não tem soluções inteiras; o trecho sobre contrapositiva identifica a equivalência entre P→Q e ¬Q→¬P; e o trecho sobre “se e somente se” exige as duas direções. Além disso, a refutação com n=37 requer aplicar a definição de múltiplo e avaliar as propriedades. Portanto, a resposta é construída combinando trechos não contíguos e inferências. | R: Há uma cadeia de aplicações: reconhecer que P é sempre falsa nos inteiros, concluir P→Q por vacuidade, identificar corretamente qual implicação tem ¬Q→¬P como contrapositiva e verificar a direção oposta por um caso como n=37. Contudo, é possível encurtar o percurso observando diretamente que P é sempre falsa e Q é verdadeira para algum inteiro, o que já mostra que a equivalência falha. Assim, há etapas encadeadas, mas nem todas são indispensáveis para alcançar o resultado central. | C: A resolução não é mera paráfrase: requer empregar vacuidade, contrapositiva, a decomposição de uma equivalência em duas implicações e um contraexemplo. Porém, essas aplicações formam um racional curto, e os conceitos necessários estão explicitamente sugeridos pelo enunciado e cobertos pelos trechos-fonte; não há desenvolvimento técnico longo ou conceitualmente denso. | G: A recordação isolada de uma definição não basta, pois é preciso aplicá-la à orientação concreta das negações e aos valores de P e Q em um inteiro específico. Ainda assim, trata-se de compreensão e aplicação de regras lógicas elementares, sem exigir uma síntese extensa ou estratégia de resolução especialmente aberta. | P: Dois ou mais distratores podem ser descartados antes da resolução integral. O primeiro reconhece que Q→P não foi demonstrada, mas ainda conclui indevidamente a equivalência; o segundo troca a direção da contrapositiva; o terceiro atribui ao caso Q(37) verdadeira e P(37) falsa uma refutação de P→Q, quando esse padrão refuta Q→P; e o quarto afirma P(37), isto é, 37²=−37, algo imediatamente falso. Logo, todos os quatro têm falhas detectáveis antecipadamente."
+    ],
+    "status": "accepted"
+  },
+  {
+    "topic": "Sequências infinitas e recorrências",
+    "stem": "Em uma bancada de ensaios, u_n representa a calibração acumulada ao término do ciclo n. São dados u_3=11 e u_n=u_(n−1)+n(n−2), para n>3. As leituras realizadas a cada quatro ciclos, começando no ciclo 3, formam v_k=u_(4k+3), para k≥0. Para cotejo, h_0=2, h_1=5 e h_k=4h_(k−1)−3h_(k−2), para k≥2. Qual alternativa composta deve ser assinalada ao analisar a expressão de v_k, a relação recursiva entre suas leituras consecutivas e o limite de v_k/h_k quando k tende ao infinito?",
+    "alternatives": {
+      "A": "v_k=(64k³+120k²+62k+33)/3; v_0=11 e v_k=v_(k−1)+64k²+32k+2, para k≥1; além disso, lim(k→∞) v_k/h_k=0.",
+      "B": "v_k=(64k³+120k²+62k+33)/3; v_0=11 e v_k=v_(k−1)+64k²+16k+2, para k≥1; além disso, lim(k→∞) v_k/h_k=0.",
+      "C": "v_k=(64k³+120k²+62k+33)/3; v_0=11 e v_k=v_(k−1)+64k²+16k+2, para k≥1; além disso, lim(k→∞) v_k/h_k=∞.",
+      "D": "v_k=(64k³+120k²+74k+33)/3; v_0=11 e v_k=v_(k−1)+64k²+16k+6, para k≥1; além disso, lim(k→∞) v_k/h_k=0.",
+      "E": "v_k=(16k³+48k²+41k+33)/3; v_0=11 e v_k=v_(k−1)+16k²+16k+3, para k≥1; além disso, lim(k→∞) v_k/h_k=0."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 3,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.8,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Análise combinatória e contagem",
+    "stem": "Em uma rotina de auditoria, há dez fichas de verificação distintas: três especiais, marcadas P, Q e R, e sete ordinárias. Uma leitura ocupa oito posições, sem repetição, inclui P, Q e R e utiliza exatamente cinco fichas ordinárias. A rotina é aceita quando pelo menos um dos pares P–Q, Q–R ou R–P aparece em posições consecutivas, em qualquer uma das duas ordens possíveis. Após analisar as escolhas e as disposições que atendem à rotina, qual alternativa fornece a quantidade de leituras aceitas?",
+    "alternatives": {
+      "A": "21×(6×7!−6×6!) = 544320",
+      "B": "21×(6×7!−3×6!) = 589680",
+      "C": "21×(6×7!−6×6!+2×6!) = 574560",
+      "D": "1×(6×7!−6×6!) = 25920",
+      "E": "21×6×7! = 635040"
+    },
+    "correct_label": "A",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Fundamentos de teoria dos grafos",
+    "stem": "Em uma instalação portuária, 24 pontos de controle foram separados em dois setores. Cada conexão física une um ponto de um setor a um ponto do outro, e a instalação possui 96 conexões. Uma ronda automatizada parte de um ponto, retorna a ele e passa por cada ponto exatamente uma vez durante o trajeto. Além disso, cada ponto participa da mesma quantidade de conexões. Ao analisar conjuntamente essas condições, qual conclusão deve constar no relatório sobre os tamanhos dos setores, a quantidade de conexões por ponto e a presença das conexões cruzadas possíveis?",
+    "alternatives": {
+      "A": "Os dois setores têm 10 e 14 pontos; cada ponto participa de 8 conexões; e parte das conexões possíveis entre os setores está ausente.",
+      "B": "Os dois setores têm 12 pontos cada um; cada ponto participa de 8 conexões; e parte das conexões possíveis entre os setores está ausente.",
+      "C": "Os dois setores têm 12 pontos cada um; cada ponto participa de 12 conexões; e parte das conexões possíveis entre os setores está ausente.",
+      "D": "Os dois setores têm 12 pontos cada um; cada ponto participa de 8 conexões; e a quantidade de conexões coincide com a capacidade cruzada da divisão.",
+      "E": "Os dois setores têm 12 pontos cada um; cada ponto participa de 8 conexões; e os dados não permitem estabelecer se parte das conexões possíveis entre os setores está ausente."
+    },
+    "correct_label": "B",
+    "attribute_scores": {
+      "L": 3,
+      "R": 3,
+      "C": 2,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.65,
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attempts_used": 1,
+    "failed_criteria_history": [],
+    "status": "accepted"
+  },
+  {
+    "topic": "Métodos de prova de teoremas",
+    "status": "discarded",
+    "stem": "Em uma estação oceanográfica, E é o conjunto não vazio dos módulos eletrônicos instalados, e C ⊆ E é o conjunto dos módulos que passaram por calibração. Para x∈E, L(x) significa que x opera dentro do limite de deriva permitido. Considere a implicação: “se (∀x∈C) L(x), então ¬(∃x∈E)((x∈C)∧¬L(x))”. Qual esboço de demonstração sustenta essa implicação de modo logicamente válido e suficiente?",
+    "correct_answer": "O esboço que reescreve ¬(∃x∈E)((x∈C)∧¬L(x)) como (∀x∈E)¬((x∈C)∧¬L(x)); reexpressa a hipótese (∀x∈C)L(x) como (∀x∈E)((x∈C)→L(x)); e, para um x∈E, observa que x∈C implica L(x), tornando impossível a conjunção (x∈C)∧¬L(x). Assim, a condição universal obtida da hipótese produz a condição universal equivalente à conclusão.",
+    "distractors": [
+      {
+        "text": "O esboço que reescreve ¬(∃x∈E)((x∈C)∧¬L(x)) como (∀x∈E)¬((x∈C)∧¬L(x)); reexpressa a hipótese (∀x∈C)L(x) como (∀x∈E)((x∈C)∧L(x)); e, para um x∈E, usa essa condição para afastar a conjunção (x∈C)∧¬L(x). Assim, a condição universal obtida da hipótese produz a condição universal equivalente à conclusão.",
+        "difference_type": "inferencial",
+        "difference_description": "Ao ampliar o domínio da hipótese universal de C para E, usa conjunção, (x∈C)∧L(x), em vez de implicação, (x∈C)→L(x)."
+      },
+      {
+        "text": "O esboço que reescreve ¬(∃x∈E)((x∈C)∧¬L(x)) como (∃x∈E)¬((x∈C)∧¬L(x)); reexpressa a hipótese (∀x∈C)L(x) como (∀x∈E)((x∈C)→L(x)); e, para um x∈E, observa que x∈C implica L(x), afastando a conjunção (x∈C)∧¬L(x). Assim, a condição universal obtida da hipótese produz a forma reescrita da conclusão.",
+        "difference_type": "factual",
+        "difference_description": "Na reescrita da negação existencial, troca ∃ por ∃, quando a passagem correta exige trocar o quantificador existencial por ∀."
+      },
+      {
+        "text": "O esboço que reescreve ¬(∃x∈E)((x∈C)∧¬L(x)) como ¬(∃x∈E)((x∈C)→¬L(x)); reexpressa a hipótese (∀x∈C)L(x) como (∀x∈E)((x∈C)→L(x)); e, para um x∈E, observa que x∈C implica L(x), concluindo que não ocorre o suposto contraexemplo codificado pela implicação. Assim, a condição universal obtida da hipótese sustenta a conclusão reescrita.",
+        "difference_type": "factual",
+        "difference_description": "Ao codificar o contraexemplo existencial, substitui indevidamente a conjunção (x∈C)∧¬L(x) pela implicação (x∈C)→¬L(x)."
+      },
+      {
+        "text": "O esboço que reescreve ¬(∃x∈E)((x∈C)∧¬L(x)) como (∀x∈E)¬((x∈C)∧¬L(x)); reexpressa a hipótese (∀x∈C)L(x) como (∀x∈E)(L(x)→(x∈C)); e, para um x∈E, observa que L(x) implica x∈C, tomando isso como razão para excluir a conjunção (x∈C)∧¬L(x). Assim, a condição universal obtida da hipótese produz a condição universal equivalente à conclusão.",
+        "difference_type": "causal",
+        "difference_description": "Inverte a direção da implicação ao ampliar a hipótese: a pertença a C deve levar a L(x), e não L(x) levar à pertença a C."
+      }
+    ],
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 2,
+      "G": 2,
+      "P": 1
+    },
+    "composite_score": 2.1,
+    "attempts_used": 2,
+    "failure_history": [
+      "Pontuação composta D=2.20 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado sustenta toda a avaliação. O trecho c58 explicita a prova por casos para hipótese disjuntiva e afirma que os casos não precisam ser mutuamente exclusivos; c61 fundamenta o ramo impossível por vacuidade; e c63 distingue provas construtivas e não construtivas de existência, necessário para rejeitar a caracterização equivocada do segundo distrator. Assim, a resposta exige combinar trechos não contíguos. | R: Para selecionar a avaliação correta é necessário encadear os pontos: decompor a disjunção em ramos, verificar no primeiro ramo que k=2q é inteiro e testemunha n=2k, reconhecer no segundo que n²=2 é impossível em Z e portanto a implicação vale vacuamente, e então avaliar a recombinação e a classificação da prova. Pular qualquer uma dessas verificações deixa ao menos um dos distratores centrais sem refutação adequada. | C: O racional necessário é curto e usa conceitos já apresentados no próprio enunciado: múltiplo como existência de um k inteiro, tratamento por ramos, impossibilidade de n²=2 em Z e vacuidade. Não é preciso introduzir teoria ou procedimentos externos, nem desenvolver uma argumentação extensa. | G: A resposta não é mera localização ou recordação literal: é preciso aplicar regras de implicação com hipótese disjuntiva e de vacuidade ao argumento concreto, além de distinguir o quantificador existencial interno da definição de múltiplo de uma prova de teorema existencial. Contudo, essa aplicação permanece direta e não requer síntese ou análise extensa de novas estruturas. | P: Dois ou mais distratores podem ser eliminados sem resolver integralmente a prova: o quarto cai imediatamente porque 2q é inteiro para todo q inteiro, sem q precisar ser par; o terceiro cai pela regra de que os casos de uma disjunção não precisam ser exclusivos; e o segundo confunde uma afirmação universal condicional com uma prova de existência não construtiva. Logo, há pelo menos dois distratores descartáveis antecipadamente.",
+      "Pontuação composta D=2.10 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado sustenta integralmente a seleção. O trecho c45 fornece a regra de negação do quantificador existencial, necessária para passar de ¬∃ para ∀¬; o trecho c48 fornece a equivalência de mudança de domínio universal, necessária para converter (∀x∈C)L(x) em (∀x∈E)((x∈C)→L(x)). A resposta exige combinar essas regras de trechos distintos e aplicá-las à fórmula. | R: Há mais de uma verificação encadeada: reconhecer a negação correta do existencial, mudar corretamente o domínio da hipótese com implicação e concluir pontualmente que C(x) e ¬L(x) não podem coexistir. Contudo, a conclusão pode ser obtida diretamente da leitura semântica de que ‘todo elemento de C satisfaz L’ exclui um elemento de C que não satisfaz L; portanto, nem todas as reformulações formais precisam ser percorridas para chegar à alternativa correta. | C: A resolução requer conceitos formais que não estão inteiramente explicitados no enunciado, especialmente negação de quantificadores, mudança de domínio e a relação entre C(x)→L(x) e ¬(C(x)∧¬L(x)). Ainda assim, o racional é curto e usa um conjunto limitado de regras elementares de lógica de predicados. | G: A recordação pura de uma frase do material não basta, pois é necessário aplicar as regras às fórmulas concretas e distinguir implicação de conjunção, além de conferir a equivalência da negação quantificada. Isso caracteriza compreensão e aplicação de regras lógicas, sem exigir uma síntese extensa ou uma estratégia de prova não rotineira. | P: Dois ou mais distratores são descartáveis sem resolver toda a demonstração. O primeiro usa conjunção na mudança de domínio universal, erro explicitamente contrastado no trecho c48; o segundo troca indevidamente ∀ por ∃ ao negar o existencial; o terceiro substitui indevidamente a conjunção interna por uma implicação; e o quarto inverte a implicação na hipótese. Assim, há vários sinais locais de invalidade antes da resolução completa."
+    ]
+  },
+  {
+    "topic": "Indução matemática",
+    "status": "discarded",
+    "stem": "Um painel possui n módulos de sinalização, e cada módulo pode estar nos estados ligado ou desligado. A afirmação em exame é: “o painel com n módulos admite 2^n configurações completas”. A base usada é n=1, para a qual há 2 configurações.\n\nPara a passagem indutiva, uma prova candidata toma um painel com k+1 módulos e retira o módulo r, obtendo o subconjunto A de k módulos; em seguida retira um módulo distinto s, obtendo o subconjunto B de k módulos. Pelo passo indutivo, A e B admitem 2^k configurações. Como A e B possuem k−1 módulos em comum, a prova afirma que uma escolha de estados nesses módulos compartilhados constitui uma configuração completa comum aos dois subconjuntos e, por isso, permite combinar as duas contagens para concluir que o painel inicial possui 2·2^k=2^(k+1) configurações.\n\nQual análise aponta a falha e a correção logicamente necessária para sustentar a conclusão?",
+    "correct_answer": "A passagem proposta é inválida: uma escolha nos k−1 módulos compartilhados é apenas uma configuração parcial, não uma configuração completa pertencente simultaneamente a A e B. No salto de k=1 para k=2, os subconjuntos sequer compartilham módulo, de modo que o elo alegado não sustenta a passagem. A correção é particionar as configurações do painel de k+1 módulos pelo estado de um módulo fixado; apagar esse módulo em cada classe fornece uma bijeção com as configurações de k módulos, resultando em T(k+1)=2T(k).",
+    "distractors": [
+      {
+        "text": "A passagem proposta é válida: uma escolha de estados nos k−1 módulos compartilhados, combinada com as contagens de A e B, determina uma configuração completa comum aos dois subconjuntos. No salto de k=1 para k=2, a ausência de módulos compartilhados não impede essa combinação; logo, T(k+1)=2T(k) decorre da sobreposição.",
+        "difference_type": "inferencial",
+        "difference_description": "Confunde uma configuração parcial dos módulos compartilhados com uma configuração completa que pertença simultaneamente aos conjuntos de configurações de A e B."
+      },
+      {
+        "text": "A passagem proposta é inválida: uma escolha nos k−1 módulos compartilhados é uma configuração parcial, e no salto de k=1 para k=2 não há módulo comum que conecte os subconjuntos. A correção é acrescentar um módulo e contar o aumento como T(k+1)=T(k)+(k+1), pois o novo módulo gera k+1 configurações adicionais.",
+        "difference_type": "causal",
+        "difference_description": "Substitui indevidamente a duplicação das escolhas binárias por uma recorrência aditiva própria de contextos em que um novo objeto subdivide estruturas já contadas."
+      },
+      {
+        "text": "A passagem proposta é inválida: uma escolha nos k−1 módulos compartilhados é parcial, e o salto de k=1 para k=2 não possui o elo de sobreposição alegado. A correção é verificar diretamente os casos n=2 e n=3 e, após essas verificações, reutilizar a combinação de A e B nas passagens seguintes para obter T(k+1)=2T(k).",
+        "difference_type": "inferencial",
+        "difference_description": "Supõe que a checagem de alguns casos iniciais repara a ausência de uma justificativa geral para a passagem indutiva baseada em A e B."
+      },
+      {
+        "text": "A passagem proposta é inválida: uma escolha nos k−1 módulos compartilhados é apenas parcial, e o salto de k=1 para k=2 evidencia a falha do elo alegado. A correção é particionar as configurações pelo estado de um módulo fixado; ao apagá-lo, a união das duas classes fica em bijeção com as configurações de k módulos, resultando em T(k+1)=2T(k).",
+        "difference_type": "factual",
+        "difference_description": "Erra na etapa intermediária da bijeção: apagar o módulo fixado leva cada uma das duas classes, e não a união delas, a uma cópia das configurações de k módulos."
+      }
+    ],
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 1,
+      "G": 3,
+      "P": 1
+    },
+    "composite_score": 2.25,
+    "attempts_used": 2,
+    "failure_history": [
+      "Pontuação composta D=2.05 não ultrapassou o limiar τ=2.33. L: O trecho c72, isoladamente, fornece o princípio decisivo: para um passo de tamanho p, são necessárias p bases consecutivas. Aplicando-o com p=4 e verificando as decomposições de 18 a 21, identifica-se a alternativa válida. Contudo, o trecho não declara explicitamente o caso dos módulos 4 e 7 nem calcula essas quatro bases; é necessária essa adaptação simples. | R: A solução exige encadear a verificação das quatro bases consecutivas com a regra k→k+4, reconhecendo que ela preserva apenas uma classe de resíduos módulo 4. Porém, o trecho de menor contraexemplo apresentado na resposta correta é uma confirmação alternativa e não é indispensável: as quatro bases e o passo já bastam pela indução com incremento constante. Assim, há etapas encadeadas, mas uma pode ser omitida sem invalidar a conclusão. | C: O racional necessário é curto e corresponde quase diretamente ao teorema de indução com passo constante: verificar quatro casos consecutivos e acrescentar 4. As contas das bases são elementares e os próprios enunciados das alternativas já explicitam a estrutura de resíduos e o argumento de fechamento; não se exige desenvolver um aparato conceitual extenso além disso. | G: Não basta recordar uma decomposição ou uma regra de indução. É preciso analisar a suficiência das bases para o salto de 4, avaliar a cobertura das classes de resíduos e checar a compatibilidade do predecessor usado no argumento por menor contraexemplo. Essa comparação das justificativas exige avaliação lógica, não mera localização ou aplicação mecânica. | P: Dois ou mais distratores podem ser eliminados sem uma resolução completa. O primeiro só gera capacidades congruentes a 18 módulo 4; o segundo usa n−1, incompatível com um passo que acrescenta 4; o terceiro omite a base 21 e não garante n−4≥18; e o quarto repete a classe de resíduo de 18 ao usar 22 e deixa 21 sem base. Portanto, há vários distratores descartáveis por falhas locais evidentes.",
+      "Pontuação composta D=2.25 não ultrapassou o limiar τ=2.33. L: O trecho c75 permite identificar o problema estrutural de uma indução que depende de uma sobreposição que desaparece no primeiro passo relevante, mas não fornece a correção por contagem de configurações. Já c73 fornece essencialmente a correção — separar em duas classes disjuntas conforme um elemento fixado e estabelecer bijeções —, mas não analisa a prova candidata com os dois subconjuntos. c69 não resolve a questão. Assim, a análise completa requer combinar c75 e c73, com adaptação dos conjuntos para configurações de módulos. | R: É preciso ao menos distinguir configuração parcial de configuração completa, verificar que o argumento de sobreposição falha no caso k=1 e reconhecer que a recorrência correta decorre de duas classes disjuntas segundo o estado de um módulo fixo. Contudo, nem todas essas verificações são indispensáveis para alcançar a alternativa correta: a construção por particionamento já basta para rejeitar as correções com recorrências erradas e selecionar a correta. Portanto há etapas encadeadas, mas algumas podem ser abreviadas. | C: O racional necessário é curto e usa noções já presentes no enunciado e nos trechos: fixar um módulo, separar os casos ligado/desligado, apagar esse módulo e obter duas cópias das configurações de k módulos. A crítica à sobreposição também decorre diretamente da distinção entre estados atribuídos a k−1 módulos e uma configuração de k módulos. Não exige aparato conceitual externo ou desenvolvimento extenso. | G: Não é adequadamente respondida por mera recordação de uma fórmula. É necessário analisar a validade lógica da passagem indutiva, avaliar a função da interseção entre subconjuntos e sintetizar uma nova construção de contagem por classes disjuntas e bijeções. Isso caracteriza análise e síntese, isto é, demanda cognitiva de ordem superior. | P: Há pelo menos dois distratores elimináveis sem resolver toda a análise. O distrator com T(k+1)=T(k)+(k+1) contradiz imediatamente a duplicação causada por um novo módulo binário (por exemplo, já falha para k=1). O que propõe verificar n=2 e n=3 e depois reutilizar a mesma combinação não corrige uma regra indutiva que continua sem justificativa geral. O distrator que declara válida a sobreposição é mais próximo do erro central, mas a presença de pelo menos dois elimináveis implica pontuação 1."
+    ]
+  },
+  {
+    "topic": "Métodos de prova de teoremas",
+    "status": "discarded",
+    "stem": "Em uma estação experimental, D reúne os módulos de controle submetidos à auditoria, e S reúne os módulos destinados ao setor criogênico, com S ⊆ D. Para fundamentar o parecer, a engenheira tomou um módulo u arbitrário de D e, a partir dos registros de calibração, obteve que, se u pertencesse a S, então u liberaria energia dentro da faixa certificada C. Há ainda um módulo s pertencente a S que libera energia na faixa C. O dossiê também estabelece que, para qualquer módulo y de D, se y pertencer a S e liberar energia na faixa C, então y=s. Um revisor contesta o parecer porque encontrou um módulo t pertencente a D, mas fora de S, que falha na faixa C. Qual veredito sobre o dossiê é justificado?",
+    "correct_answer": "A objeção baseada em t não compromete a conclusão restrita a S; o dossiê apoia existência com unicidade em S para a faixa C, tendo s como elemento correspondente.",
+    "distractors": [
+      {
+        "text": "A objeção baseada em t compromete a conclusão restrita a S, pois a falha de t em C invalida a passagem da análise de u em D para S; assim, o dossiê não apoia existência com unicidade em S para a faixa C.",
+        "difference_type": "causal",
+        "difference_description": "Trata a falha de t, que está fora de S, como se ela invalidasse a conclusão condicionada aos módulos que pertencem a S."
+      },
+      {
+        "text": "A objeção baseada em t não compromete a conclusão restrita a S; o dossiê apoia a existência de um módulo em S para a faixa C, tendo s como correspondente, mas não justifica a unicidade nesse setor.",
+        "difference_type": "inferencial",
+        "difference_description": "Nega indevidamente que a condição sobre y em D, quando y pertence a S e libera C, force y=s e estabeleça unicidade em S."
+      },
+      {
+        "text": "A objeção baseada em t não compromete a conclusão sobre a faixa C; o dossiê apoia existência com unicidade em D para essa faixa, tendo s como elemento correspondente.",
+        "difference_type": "inferencial",
+        "difference_description": "Amplia sem justificativa a unicidade de S para D, embora a condição de igualdade exija explicitamente que o módulo considerado pertença a S."
+      },
+      {
+        "text": "A objeção baseada em t não compromete a conclusão restrita a S; o dossiê apoia existência com unicidade em S para a faixa C, tendo u como elemento correspondente.",
+        "difference_type": "factual",
+        "difference_description": "Identifica u como o módulo correspondente, embora u tenha sido apenas escolhido arbitrariamente em D e não haja dado que assegure que u pertence a S ou coincide com s."
+      }
+    ],
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attribute_scores": {
+      "L": 3,
+      "R": 2,
+      "C": 1,
+      "G": 2,
+      "P": 1
+    },
+    "composite_score": 1.9500000000000002,
+    "attempts_used": 2,
+    "failure_history": [
+      "Questão reprovada: critério de conformidade 'single_correct_answer' não atendido; diversidade semântica pontuou 1, abaixo do mínimo exigido (2). Observações do avaliador: A terceira alternativa classificada como distrator contém, em seu roteiro matemático, uma demonstração válida: de 2∣t obtém-se 2∣t² e, separadamente, t²≠5; essas duas afirmações permitem concluir corretamente a conjunção 2∣t² ∧ t²≠5. A expressão «e, como t²≠5» não faz de t²≠5 uma causa de 2∣t², mas apenas acrescenta a segunda condição necessária à conjunção.",
+      "Pontuação composta D=1.95 não ultrapassou o limiar τ=2.33. L: Nenhum trecho isolado sustenta integralmente o veredito. O trecho c48 permite justificar a restrição da afirmação universal de D para S e perceber que t, fora de S, não é contraexemplo; c60 explica o papel de tomar u arbitrário; c64 explicita a estrutura de existência e unicidade. A conclusão é formada combinando essas ideias com as premissas do enunciado. | R: Há mais de uma aplicação lógica: interpretar a condicional obtida para u arbitrário como válida para os elementos de S, distinguir t\\notin S de um contraexemplo relevante e aplicar a condição S(y)\\land C(y)\\to y=s à unicidade. Contudo, a etapa sobre u é redundante para provar a existência com unicidade, pois o enunciado já fornece diretamente s\\in S e C(s), além da condição de unicidade. Portanto, parte da cadeia pode ser pulada sem impedir a resposta correta. | C: O racional necessário é curto e majoritariamente uma paráfrase lógica das premissas: s fornece existência; qualquer y de S com C deve ser s, fornecendo unicidade; t está fora de S e é irrelevante à conclusão restrita. Não é necessário introduzir conceitos externos densos nem desenvolver uma prova extensa. | G: Não basta recordar uma definição: é preciso compreender o escopo do subconjunto S, aplicar uma implicação de unicidade e avaliar se t é um contraexemplo pertinente. Trata-se de aplicação e compreensão de lógica de predicados, mas sem exigir síntese complexa ou análise extensa. | P: Dois ou mais distratores podem ser descartados antes da resolução completa. O primeiro erra ao tratar um elemento explicitamente fora de S como refutação de uma tese sobre S; o terceiro amplia indevidamente a unicidade para D; e o quarto troca o testemunho explícito s pelo elemento arbitrário u. Assim, há pelo menos dois distratores elimináveis precocemente."
+    ]
+  },
+  {
+    "topic": "Indução matemática",
+    "status": "discarded",
+    "stem": "Uma cooperativa emite fichas de crédito de 4 ou de 7 unidades. Considere P(n): “n unidades podem ser obtidas por uma quantidade não negativa de fichas desses dois valores”. A cooperativa pretende justificar P(n) para n≥18 por indução. Quatro memorandos foram apresentados:\n\nA. Verificam-se P(18), P(19), P(20) e P(21). Para k≥21, admite-se P(k); acrescentando uma ficha de 4 unidades, conclui-se P(k+1).\n\nB. Verificam-se P(18), P(20) e P(21). Para k≥21, admite-se que P(i) vale para cada i com 18≤i≤k; usa-se a composição de k−3 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).\n\nC. Verificam-se P(18), P(19), P(20) e P(21). Para k≥18, admite-se que P(i) vale para cada i com 18≤i≤k; usa-se a composição de k−3 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).\n\nD. Verificam-se P(18), P(19), P(20) e P(21). Para k≥21, admite-se que P(i) vale para cada i com 18≤i≤k; usa-se a composição de k−3 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).\n\nQual memorando fornece uma demonstração logicamente suficiente para a afirmação pretendida?",
+    "correct_answer": "D. As quatro verificações iniciais cobrem 18, 19, 20 e 21. Na passagem com k≥21, tem-se k−3≥18, de modo que a hipótese abrange P(k−3); a adição de uma ficha de 4 unidades produz k+1. Portanto, P(n) fica demonstrada para n≥18.",
+    "distractors": [
+      {
+        "text": "Verificam-se P(18), P(19), P(20) e P(21). Para k≥21, admite-se apenas P(k); toma-se a composição de k−3 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).",
+        "difference_type": "inferencial",
+        "difference_description": "A hipótese de indução foi reduzida a P(k), mas o passo utiliza P(k−3); essa proposição não decorre da hipótese adotada."
+      },
+      {
+        "text": "Verificam-se P(18), P(20) e P(21). Para k≥21, admite-se que P(i) vale para cada i com 18≤i≤k; usa-se a composição de k−3 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).",
+        "difference_type": "factual",
+        "difference_description": "Falta a verificação inicial de P(19), necessária para cobrir o intervalo antes que o passo indutivo possa sustentar a progressão."
+      },
+      {
+        "text": "Verificam-se P(18), P(19), P(20) e P(21). Para k≥20, admite-se que P(i) vale para cada i com 18≤i≤k; usa-se a composição de k−3 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).",
+        "difference_type": "factual",
+        "difference_description": "O limite inicial do passo é inadequado: para k=20, tem-se k−3=17, índice que não está coberto pela hipótese iniciada em 18."
+      },
+      {
+        "text": "Verificam-se P(18), P(19), P(20) e P(21). Para k≥21, admite-se que P(i) vale para cada i com 18≤i≤k; usa-se a composição de k−4 e acrescenta-se uma ficha de 4 unidades para obter P(k+1).",
+        "difference_type": "causal",
+        "difference_description": "A composição escolhida tem valor k−4; ao acrescentar 4 unidades, obtém-se k, e não k+1."
+      }
+    ],
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 2,
+      "semantic_diversity": 3
+    },
+    "attribute_scores": null,
+    "composite_score": null,
+    "attempts_used": 2,
+    "failure_history": [
+      "Questão reprovada: critério de conformidade 'no_length_imbalance' não atendido. Observações do avaliador: A alternativa C é a única correta. Contudo, ela é sensivelmente mais longa e mais explicativa que A, B e D, destacando-se por extensão e detalhamento.",
+      "Questão reprovada: critério de conformidade 'no_implausible_distractor' não atendido. Observações do avaliador: O memorando A é um distrator estruturalmente fraco: afirma que acrescentar uma ficha de 4 unidades a uma composição de k produz k+1, erro aritmético imediatamente visível, sem exigir compreensão de indução. Além disso, a seção posterior intitulada “Distratores” não reproduz exatamente as alternativas A–D (por exemplo, altera o uso de k−3 e o limite inferior em uma alternativa), o que deve ser corrigido para manter consistência editorial."
+    ]
+  },
+  {
+    "topic": "Fundamentos de teoria dos grafos",
+    "status": "discarded",
+    "stem": "Durante a auditoria de cabos entre cinco unidades de calibração P, Q, R, S e T, dois croquis foram apresentados como disposições distintas da mesma instalação.\n\nCroqui A:\n\n      Q\n     / \\\n   a/   \\b\n   P-----R⟲d---S---T\n    \\ c /       e   f\n     \\_/---------\\__/\n          g\n\nCroqui B:\n\nP---a---Q\n|\\       \\\n| c       b\n|  \\       \\\ng   R⟲d---S---f---T\n \\________e________/\n\nNos dois croquis, os sete cabos já registrados são: a entre P e Q; b entre Q e R; c entre R e P; d sai de R e retorna a R; e entre R e S; f entre S e T; e g entre T e P. Um cruzamento de traços, caso aparente ocorrer, não constitui uma unidade adicional. Há ainda o cabo h, cujos terminais ficaram sem registro. Os graus auditados das unidades P, Q, R, S e T são, respectivamente, 4, 3, 5, 2 e 2.\n\nNo livro de deslocamento de um técnico consta a sequência P-h-Q-b-R-d-R-e-S-f-T-g-P-a-Q. Qual relatório técnico completo deve ser assinalado?",
+    "correct_answer": "A rede possui 8 cabos; h liga P a Q e constitui uma aresta paralela a a; o registro é uma trilha, mas não um caminho, pois usa cabos distintos e repete unidades.",
+    "distractors": [
+      {
+        "text": "A rede possui 9 cabos; h liga P a Q e constitui uma aresta paralela a a; o registro é uma trilha, mas não um caminho, pois usa cabos distintos e repete unidades.",
+        "difference_type": "factual",
+        "difference_description": "A contagem de cabos é 9 em vez de 8, como se o laço d correspondesse a dois cabos, e não a um único cabo com duas incidências em R."
+      },
+      {
+        "text": "A rede possui 7 cabos; h liga P a Q, mas é o mesmo cabo que a; o registro é um passeio, mas não uma trilha, pois percorre o cabo a duas vezes.",
+        "difference_type": "inferencial",
+        "difference_description": "O erro é colapsar h e a em um único cabo, ignorando que são cabos distintos com os mesmos terminais; dessa inferência decorrem a contagem reduzida e a classificação incorreta do registro."
+      },
+      {
+        "text": "A rede possui 8 cabos; h liga P a Q e constitui uma aresta paralela a a; o registro é uma trilha e também um caminho, pois usa cabos distintos.",
+        "difference_type": "inferencial",
+        "difference_description": "O relatório conclui indevidamente que o uso de cabos distintos basta para caracterizar um caminho, embora o registro repita as unidades R, P e Q."
+      },
+      {
+        "text": "A rede possui 8 cabos; h liga P a Q e constitui uma aresta paralela a a; o registro é um passeio, mas não uma trilha, pois repete unidades.",
+        "difference_type": "causal",
+        "difference_description": "A repetição de unidades é usada incorretamente como motivo para negar que o registro seja uma trilha; ela impede que seja caminho, mas os cabos do registro são distintos."
+      }
+    ],
+    "quality_scores": {
+      "clarity": 2,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attribute_scores": {
+      "L": 2,
+      "R": 1,
+      "C": 2,
+      "G": 2,
+      "P": 1
+    },
+    "composite_score": 1.6500000000000001,
+    "attempts_used": 2,
+    "failure_history": [
+      "Questão reprovada: critério de conformidade 'no_implausible_distractor' não atendido. Observações do avaliador: Não há sobreposição material com as questões já aceitas: embora haja outra questão de teoria dos grafos, ela avalia bipartição, coloração e planaridade, enquanto esta avalia complemento de grafo, pontes/ciclos e faces em uma representação planar.",
+      "Pontuação composta D=1.65 não ultrapassou o limiar τ=2.33. L: O enunciado já fornece quase todos os fatos necessários: há sete cabos registrados e um cabo adicional h, e o próprio livro de deslocamento mostra P-h-Q. O trecho [c174] fornece as definições decisivas de trilha e caminho, incluindo que uma trilha pode repetir vértices. Não é preciso combinar os trechos não contíguos sobre soma dos graus, laços e arestas paralelas para chegar ao relatório; há informação parcialmente explícita e uma aplicação simples de uma definição. | R: Há um atalho que evita a cadeia pretendida. Pode-se concluir diretamente que há 8 cabos por “sete cabos já registrados” mais o cabo h; o registro explicita que h vai de P a Q; e os rótulos h, b, d, e, f, g e a aparecem uma única vez, enquanto P, Q e R se repetem. Assim, basta uma aplicação das definições para classificá-lo como trilha, mas não caminho. Os graus auditados e o teorema do aperto de mãos apenas confirmam o resultado, não são etapas indispensáveis. | C: A resolução exige aplicar conceitos de teoria dos grafos — especialmente que laço conta como aresta, que arestas paralelas são distintas e que trilha admite repetição de vértices, diferentemente de caminho. Contudo, o racional pode ser curto e não demanda uma derivação extensa: contar os cabos, ler os terminais de h no registro e verificar repetição de arestas e vértices. | G: Não é mera recordação: é necessário interpretar a sequência alternada de unidades e cabos, distinguir repetição de vértices de repetição de arestas e aplicar corretamente as definições de trilha e caminho. Ainda assim, não requer síntese complexa, pois os identificadores de cabo são explícitos e não se repetem no registro. | P: Dois ou mais distratores podem ser descartados antes da resolução completa. O de 9 cabos contradiz diretamente a existência de sete cabos registrados mais o cabo adicional h; o de 7 cabos também contradiz essa informação. O distrator que chama o registro de caminho cai ao observar repetições explícitas de P, Q e R. O último aplica incorretamente a definição, pois repetição de unidades não impede que seja trilha se os cabos forem distintos. Portanto, há vários distratores elimináveis por verificações locais."
+    ]
+  },
+  {
+    "topic": "Indução matemática",
+    "status": "discarded",
+    "stem": "Uma faixa linear de comprimento inteiro n≥6 deve ser coberta, sem lacunas nem sobreposições, por peças rígidas de comprimentos 2 e 3. Considere três propostas para justificar que o revestimento é possível para esses comprimentos.\n\nI. Verificam-se 6=3+3 e 7=2+2+3. A partir de um revestimento de comprimento k, acrescenta-se uma peça de comprimento 2 em uma extremidade, obtendo-se comprimento k+2.\n\nII. Verificam-se os comprimentos 6, 7 e 8. Para k≥8, admite-se que há revestimento para cada comprimento inteiro entre 6 e k. Para formar k+1, retira-se conceitualmente uma peça final de comprimento 2 quando k+1 é par, restando k−1, ou uma peça final de comprimento 3 quando k+1 é ímpar, restando k−2; em seguida, usa-se o revestimento já disponível para a parte restante.\n\nIII. Para uma faixa de comprimento k+1, tomam-se separadamente um revestimento da subfaixa formada pelas primeiras k células e outro da subfaixa formada pelas últimas k células. Como as subfaixas possuem células em comum, a proposta alega que os dois revestimentos podem ser reunidos em um revestimento da faixa maior.\n\nApós analisar o alcance das hipóteses e a compatibilidade das construções, qual parecer conjunto deve ser selecionado?",
+    "correct_answer": "As propostas I e II sustentam a afirmação; a III contém uma lacuna, pois os revestimentos escolhidos separadamente podem ser incompatíveis nas células comuns.",
+    "distractors": [
+      {
+        "text": "As propostas II sustenta a afirmação; a I contém uma lacuna, pois o acréscimo de uma peça de comprimento 2 só permite passar de k para k+2 e não estabelece o comprimento intermediário, e a III contém uma lacuna, pois os revestimentos escolhidos separadamente podem ser incompatíveis nas células comuns.",
+        "difference_type": "inferencial",
+        "difference_description": "Classifica incorretamente a proposta I como insuficiente, desconsiderando que as bases 6 e 7 iniciam as duas cadeias de comprimentos alcançadas pelo salto de 2."
+      },
+      {
+        "text": "As propostas I sustenta a afirmação; a II contém uma lacuna, pois para obter k+1 seria necessário partir apenas de um revestimento de comprimento k, e a III contém uma lacuna, pois os revestimentos escolhidos separadamente podem ser incompatíveis nas células comuns.",
+        "difference_type": "inferencial",
+        "difference_description": "Classifica incorretamente a proposta II como insuficiente, ignorando que sua hipótese inclui os comprimentos de 6 até k e, portanto, disponibiliza k−1 ou k−2 conforme a paridade."
+      },
+      {
+        "text": "As propostas I e II sustentam a afirmação; a III também sustenta a afirmação, pois as células comuns às duas subfaixas permitem ajustar os dois revestimentos e formar um revestimento da faixa maior.",
+        "difference_type": "inferencial",
+        "difference_description": "Aceita indevidamente a proposta III, tratando a mera sobreposição das subfaixas como garantia de compatibilidade entre revestimentos escolhidos de modo independente."
+      },
+      {
+        "text": "As propostas I e II sustentam a afirmação; a III contém uma lacuna, pois os revestimentos das duas subfaixas podem ter números diferentes de peças, o que impediria reuni-los em um revestimento da faixa maior.",
+        "difference_type": "causal",
+        "difference_description": "Mantém o parecer sobre a proposta III, mas atribui a lacuna a uma causa incorreta: números diferentes de peças não são, por si sós, o impedimento; a falha é a possível incompatibilidade das peças nas células compartilhadas."
+      }
+    ],
+    "quality_scores": {
+      "clarity": 3,
+      "educational_relevance": 3,
+      "distractor_quality": 3,
+      "semantic_diversity": 3
+    },
+    "attribute_scores": null,
+    "composite_score": null,
+    "attempts_used": 2,
+    "failure_history": [
+      "Questão reprovada: critério de conformidade 'no_implausible_distractor' não atendido. Observações do avaliador: Não há sobreposição material com as questões aceitas: esta avalia reindexação e indução forte a partir de n=4. O terceiro distrator é estruturalmente fraco, pois afirma simultaneamente tomar P(4) como ponto inicial e que a certificação inicial de P(4) seria dispensável; essa inconsistência pode ser percebida sem domínio específico de indução.",
+      "Questão reprovada: critério de conformidade 'no_length_imbalance' não atendido; critério de conformidade 'no_combination_alternatives' não atendido. Observações do avaliador: A alternativa correta é consideravelmente mais curta e menos detalhada que os distratores, que trazem justificativas extensas. Além disso, todas as opções apresentam um parecer combinado sobre as propostas I, II e III, incluindo formulações como “I e II sustentam”, o que caracteriza alternativa de combinação."
+    ]
+  }
+]
